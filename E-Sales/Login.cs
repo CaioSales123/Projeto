@@ -45,6 +45,7 @@ namespace E_Sales
             lblSenha.ForeColor = System.Drawing.Color.White;
         }
 
+        //Marca o usuário selecionado de azul:
         private void imgAdmin_Click(object sender, EventArgs e)
         {          
             selecionado = true;      
@@ -59,6 +60,9 @@ namespace E_Sales
             lblSelecionado.Text = "Convidado";
             lblGuest.ForeColor = System.Drawing.Color.DeepSkyBlue;
             lblAdmin.ForeColor = System.Drawing.Color.White;
+
+            txtSenha.Hide();
+            chkLembrar.Hide();
         }
 
         //Timer para expandir form:
@@ -83,5 +87,15 @@ namespace E_Sales
             }
             
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            (new Painel_Admin()).Show();
+        }
+
+
+
+        
     }
 }

@@ -68,7 +68,7 @@
             this.chkLembrar.BackColor = System.Drawing.Color.Transparent;
             this.chkLembrar.Depth = 0;
             this.chkLembrar.Font = new System.Drawing.Font("Roboto", 10F);
-            this.chkLembrar.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.chkLembrar.ForeColor = System.Drawing.Color.Transparent;
             this.chkLembrar.Location = new System.Drawing.Point(66, 364);
             this.chkLembrar.Margin = new System.Windows.Forms.Padding(0);
             this.chkLembrar.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -170,14 +170,16 @@
             // btnLogin
             // 
             this.btnLogin.Depth = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Location = new System.Drawing.Point(258, 363);
             this.btnLogin.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Primary = true;
             this.btnLogin.Size = new System.Drawing.Size(75, 31);
             this.btnLogin.TabIndex = 1;
-            this.btnLogin.Text = "Login";
+            this.btnLogin.Text = "Entrar";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // materialLabel1
             // 
@@ -231,6 +233,7 @@
             this.Controls.Add(this.materialDivider1);
             this.Controls.Add(this.chkLembrar);
             this.Controls.Add(this.txtSenha);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(400, 477);
             this.MinimumSize = new System.Drawing.Size(400, 244);
