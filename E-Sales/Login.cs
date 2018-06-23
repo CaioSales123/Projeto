@@ -92,6 +92,7 @@ namespace E_Sales
         {
             this.Hide();
             (new Painel_Admin()).Show();
+            
         }
 
 

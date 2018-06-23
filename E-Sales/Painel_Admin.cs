@@ -36,5 +36,17 @@ namespace E_Sales
             //lblObrigatorio.ForeColor = Color.Maroon;
 
         }
+
+        private void lblSair_MouseHover(object sender, EventArgs e)
+        {
+            lblSair.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void lblSair_MouseLeave(object sender, EventArgs e)
+        {
+            lblSair.ForeColor = System.Drawing.Color.White;
+        }
+
+
     }
 }
