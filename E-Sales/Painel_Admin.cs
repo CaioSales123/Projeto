@@ -33,6 +33,7 @@ namespace E_Sales
         private void Painel_Admin_Load(object sender, EventArgs e)
         {
             groupBox1.Font = new Font("Roboto", 12, FontStyle.Regular);
+            //lblObrigatorio.ForeColor = Color.Maroon;
 
         }
     }
