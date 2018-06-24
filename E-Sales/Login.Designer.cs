@@ -129,7 +129,7 @@
             this.imgGuest.ErrorImage = ((System.Drawing.Image)(resources.GetObject("imgGuest.ErrorImage")));
             this.imgGuest.Image = ((System.Drawing.Image)(resources.GetObject("imgGuest.Image")));
             this.imgGuest.InitialImage = ((System.Drawing.Image)(resources.GetObject("imgGuest.InitialImage")));
-            this.imgGuest.Location = new System.Drawing.Point(207, 87);
+            this.imgGuest.Location = new System.Drawing.Point(249, 87);
             this.imgGuest.Name = "imgGuest";
             this.imgGuest.Size = new System.Drawing.Size(126, 120);
             this.imgGuest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
