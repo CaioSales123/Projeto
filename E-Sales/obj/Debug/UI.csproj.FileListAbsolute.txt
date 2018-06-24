@@ -10,5 +10,4 @@ C:\Users\caiof\documents\visual studio 2012\Projects\E-Sales\E-Sales\obj\Debug\E
 C:\Users\caiof\documents\visual studio 2012\Projects\E-Sales\E-Sales\obj\Debug\E_Sales.frmSplashScreen.resources
 C:\Users\caiof\documents\visual studio 2012\Projects\E-Sales\E-Sales\obj\Debug\UI.csproj.GenerateResource.Cache
 C:\Users\caiof\documents\visual studio 2012\Projects\E-Sales\E-Sales\obj\Debug\E_Sales.Painel_Admin.resources
-C:\Users\caiof\documents\visual studio 2012\Projects\E-Sales\E-Sales\bin\Debug\Bunifu_UI_v1.5.3.dll
 C:\Users\caiof\documents\visual studio 2012\Projects\E-Sales\E-Sales\obj\Debug\E_Sales.Sobre.resources
