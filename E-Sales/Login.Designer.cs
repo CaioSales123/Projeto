@@ -115,7 +115,7 @@
             this.imgAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.imgAdmin.ErrorImage = ((System.Drawing.Image)(resources.GetObject("imgAdmin.ErrorImage")));
             this.imgAdmin.Image = ((System.Drawing.Image)(resources.GetObject("imgAdmin.Image")));
-            this.imgAdmin.Location = new System.Drawing.Point(66, 87);
+            this.imgAdmin.Location = new System.Drawing.Point(28, 87);
             this.imgAdmin.Name = "imgAdmin";
             this.imgAdmin.Size = new System.Drawing.Size(126, 120);
             this.imgAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
