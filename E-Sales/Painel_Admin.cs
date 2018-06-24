@@ -35,6 +35,8 @@ namespace E_Sales
             groupBox1.Font = new Font("Roboto", 12, FontStyle.Regular);
             //lblObrigatorio.ForeColor = Color.Maroon;
 
+            
+
         }
 
         private void lblSair_MouseHover(object sender, EventArgs e)
@@ -45,6 +47,16 @@ namespace E_Sales
         private void lblSair_MouseLeave(object sender, EventArgs e)
         {
             lblSair.ForeColor = System.Drawing.Color.White;
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Sobre()).Show();
         }
 
 

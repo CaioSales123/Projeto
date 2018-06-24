@@ -75,7 +75,21 @@
             this.panelAdm = new System.Windows.Forms.Panel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.lblSair = new MaterialSkin.Controls.MaterialLabel();
-            this.materialContextMenuStrip1 = new MaterialSkin.Controls.MaterialContextMenuStrip();
+            this.ContextMenuForm = new MaterialSkin.Controls.MaterialContextMenuStrip();
+            this.testeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.testeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.testeToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.testeToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ContextMenuRichText = new MaterialSkin.Controls.MaterialContextMenuStrip();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -83,6 +97,8 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAdm)).BeginInit();
             this.panelAdm.SuspendLayout();
+            this.ContextMenuForm.SuspendLayout();
+            this.ContextMenuRichText.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -91,9 +107,9 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripDropDownButton1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 648);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 578);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1165, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1130, 22);
             this.statusStrip1.TabIndex = 22;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -121,31 +137,33 @@
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sobreToolStripMenuItem.Text = "Sobre";
+            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // ajudaToolStripMenuItem
             // 
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ajudaToolStripMenuItem.Text = "Ajuda";
             // 
             // calculadoraToolStripMenuItem
             // 
             this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
-            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.calculadoraToolStripMenuItem.Text = "Calculadora";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(134, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // materialTabSelector1
             // 
@@ -170,14 +188,15 @@
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1166, 580);
+            this.materialTabControl1.Size = new System.Drawing.Size(1131, 510);
             this.materialTabControl1.TabIndex = 33;
             // 
             // tabPage1
             // 
+            this.tabPage1.AutoScroll = true;
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage1.ContextMenuStrip = this.ContextMenuForm;
             this.tabPage1.Controls.Add(this.lblObrigatorio);
-            this.tabPage1.Controls.Add(this.materialSingleLineTextField1);
             this.tabPage1.Controls.Add(this.materialLabel1);
             this.tabPage1.Controls.Add(this.materialFlatButton6);
             this.tabPage1.Controls.Add(this.materialDivider2);
@@ -187,34 +206,37 @@
             this.tabPage1.Controls.Add(this.materialFlatButton2);
             this.tabPage1.Controls.Add(this.materialFlatButton1);
             this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.txtModelo);
             this.tabPage1.Controls.Add(this.materialLabel2);
             this.tabPage1.Controls.Add(this.materialLabel3);
-            this.tabPage1.Controls.Add(this.txtOrcamento);
             this.tabPage1.Controls.Add(this.materialLabel4);
             this.tabPage1.Controls.Add(this.materialLabel7);
             this.tabPage1.Controls.Add(this.materialLabel5);
-            this.tabPage1.Controls.Add(this.txtProduto);
-            this.tabPage1.Controls.Add(this.txtSerie);
             this.tabPage1.Controls.Add(this.materialDivider1);
-            this.tabPage1.Controls.Add(this.txtNome);
-            this.tabPage1.Controls.Add(this.txtTelefone);
             this.tabPage1.Controls.Add(this.materialLabel6);
+            this.tabPage1.Controls.Add(this.txtOrcamento);
+            this.tabPage1.Controls.Add(this.txtSerie);
+            this.tabPage1.Controls.Add(this.txtTelefone);
+            this.tabPage1.Controls.Add(this.txtModelo);
+            this.tabPage1.Controls.Add(this.materialSingleLineTextField1);
+            this.tabPage1.Controls.Add(this.txtProduto);
+            this.tabPage1.Controls.Add(this.txtNome);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1158, 554);
+            this.tabPage1.Size = new System.Drawing.Size(1123, 484);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Administração";
             // 
             // lblObrigatorio
             // 
+            this.lblObrigatorio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblObrigatorio.AutoSize = true;
             this.lblObrigatorio.BackColor = System.Drawing.Color.Transparent;
             this.lblObrigatorio.Depth = 0;
             this.lblObrigatorio.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblObrigatorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblObrigatorio.Location = new System.Drawing.Point(605, 117);
+            this.lblObrigatorio.Location = new System.Drawing.Point(577, 117);
             this.lblObrigatorio.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblObrigatorio.Name = "lblObrigatorio";
             this.lblObrigatorio.Size = new System.Drawing.Size(271, 19);
@@ -232,12 +254,14 @@
             this.materialSingleLineTextField1.SelectedText = "";
             this.materialSingleLineTextField1.SelectionLength = 0;
             this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(473, 23);
-            this.materialSingleLineTextField1.TabIndex = 39;
+            this.materialSingleLineTextField1.Size = new System.Drawing.Size(461, 23);
+            this.materialSingleLineTextField1.TabIndex = 7;
             this.materialSingleLineTextField1.UseSystemPasswordChar = false;
             // 
             // materialLabel1
             // 
+            this.materialLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.BackColor = System.Drawing.Color.Transparent;
             this.materialLabel1.Depth = 0;
@@ -256,13 +280,13 @@
             this.materialFlatButton6.AutoSize = true;
             this.materialFlatButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton6.Depth = 0;
-            this.materialFlatButton6.Location = new System.Drawing.Point(979, 509);
+            this.materialFlatButton6.Location = new System.Drawing.Point(923, 439);
             this.materialFlatButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton6.Name = "materialFlatButton6";
             this.materialFlatButton6.Primary = false;
             this.materialFlatButton6.Size = new System.Drawing.Size(85, 36);
-            this.materialFlatButton6.TabIndex = 37;
+            this.materialFlatButton6.TabIndex = 15;
             this.materialFlatButton6.Text = "Atualizar";
             this.materialFlatButton6.UseVisualStyleBackColor = true;
             // 
@@ -272,10 +296,10 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.materialDivider2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider2.Depth = 0;
-            this.materialDivider2.Location = new System.Drawing.Point(568, 208);
+            this.materialDivider2.Location = new System.Drawing.Point(581, 187);
             this.materialDivider2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider2.Name = "materialDivider2";
-            this.materialDivider2.Size = new System.Drawing.Size(2, 284);
+            this.materialDivider2.Size = new System.Drawing.Size(2, 288);
             this.materialDivider2.TabIndex = 33;
             this.materialDivider2.Text = "materialDivider2";
             // 
@@ -286,7 +310,7 @@
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(19, 208);
+            this.groupBox2.Location = new System.Drawing.Point(19, 187);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(533, 123);
             this.groupBox2.TabIndex = 21;
@@ -297,12 +321,13 @@
             // 
             this.richTextBoxDescricao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.richTextBoxDescricao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxDescricao.ContextMenuStrip = this.ContextMenuRichText;
             this.richTextBoxDescricao.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxDescricao.ForeColor = System.Drawing.Color.White;
             this.richTextBoxDescricao.Location = new System.Drawing.Point(3, 20);
             this.richTextBoxDescricao.Name = "richTextBoxDescricao";
             this.richTextBoxDescricao.Size = new System.Drawing.Size(527, 100);
-            this.richTextBoxDescricao.TabIndex = 0;
+            this.richTextBoxDescricao.TabIndex = 9;
             this.richTextBoxDescricao.Text = "Descrição do produto e de seu defeito.";
             // 
             // materialFlatButton4
@@ -311,13 +336,13 @@
             this.materialFlatButton4.AutoSize = true;
             this.materialFlatButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton4.Depth = 0;
-            this.materialFlatButton4.Location = new System.Drawing.Point(1072, 509);
+            this.materialFlatButton4.Location = new System.Drawing.Point(1016, 439);
             this.materialFlatButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton4.Name = "materialFlatButton4";
             this.materialFlatButton4.Primary = false;
             this.materialFlatButton4.Size = new System.Drawing.Size(70, 36);
-            this.materialFlatButton4.TabIndex = 35;
+            this.materialFlatButton4.TabIndex = 16;
             this.materialFlatButton4.Text = "Deletar";
             this.materialFlatButton4.UseVisualStyleBackColor = true;
             // 
@@ -327,13 +352,13 @@
             this.materialFlatButton3.AutoSize = true;
             this.materialFlatButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton3.Depth = 0;
-            this.materialFlatButton3.Location = new System.Drawing.Point(870, 509);
+            this.materialFlatButton3.Location = new System.Drawing.Point(814, 439);
             this.materialFlatButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton3.Name = "materialFlatButton3";
             this.materialFlatButton3.Primary = false;
             this.materialFlatButton3.Size = new System.Drawing.Size(104, 36);
-            this.materialFlatButton3.TabIndex = 34;
+            this.materialFlatButton3.TabIndex = 14;
             this.materialFlatButton3.Text = "Inserir Novo";
             this.materialFlatButton3.UseVisualStyleBackColor = true;
             // 
@@ -344,13 +369,13 @@
             this.materialFlatButton2.AutoSize = true;
             this.materialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton2.Depth = 0;
-            this.materialFlatButton2.Location = new System.Drawing.Point(1020, 109);
+            this.materialFlatButton2.Location = new System.Drawing.Point(964, 109);
             this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton2.Name = "materialFlatButton2";
             this.materialFlatButton2.Primary = false;
             this.materialFlatButton2.Size = new System.Drawing.Size(122, 36);
-            this.materialFlatButton2.TabIndex = 32;
+            this.materialFlatButton2.TabIndex = 8;
             this.materialFlatButton2.Text = "Limpar Campos";
             this.materialFlatButton2.UseVisualStyleBackColor = true;
             // 
@@ -361,13 +386,13 @@
             this.materialFlatButton1.AutoSize = true;
             this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.Location = new System.Drawing.Point(949, 109);
+            this.materialFlatButton1.Location = new System.Drawing.Point(893, 109);
             this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton1.Name = "materialFlatButton1";
             this.materialFlatButton1.Primary = false;
             this.materialFlatButton1.Size = new System.Drawing.Size(63, 36);
-            this.materialFlatButton1.TabIndex = 31;
+            this.materialFlatButton1.TabIndex = 8;
             this.materialFlatButton1.Text = "Salvar";
             this.materialFlatButton1.UseVisualStyleBackColor = true;
             // 
@@ -382,12 +407,12 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(21, 357);
+            this.groupBox1.Location = new System.Drawing.Point(19, 340);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(533, 135);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Status";
+            this.groupBox1.Text = "Status *";
             // 
             // chkPronto
             // 
@@ -401,7 +426,7 @@
             this.chkPronto.Name = "chkPronto";
             this.chkPronto.Ripple = true;
             this.chkPronto.Size = new System.Drawing.Size(90, 30);
-            this.chkPronto.TabIndex = 3;
+            this.chkPronto.TabIndex = 13;
             this.chkPronto.Text = "Completo";
             this.chkPronto.UseVisualStyleBackColor = true;
             // 
@@ -418,7 +443,7 @@
             this.rdbRetirada.Name = "rdbRetirada";
             this.rdbRetirada.Ripple = true;
             this.rdbRetirada.Size = new System.Drawing.Size(156, 30);
-            this.rdbRetirada.TabIndex = 2;
+            this.rdbRetirada.TabIndex = 12;
             this.rdbRetirada.TabStop = true;
             this.rdbRetirada.Text = "Aguardo De Retirada";
             this.rdbRetirada.UseVisualStyleBackColor = false;
@@ -436,7 +461,7 @@
             this.rdbManutencao.Name = "rdbManutencao";
             this.rdbManutencao.Ripple = true;
             this.rdbManutencao.Size = new System.Drawing.Size(129, 30);
-            this.rdbManutencao.TabIndex = 1;
+            this.rdbManutencao.TabIndex = 11;
             this.rdbManutencao.TabStop = true;
             this.rdbManutencao.Text = "Em Manutenção";
             this.rdbManutencao.UseVisualStyleBackColor = false;
@@ -454,7 +479,7 @@
             this.rdbFila.Name = "rdbFila";
             this.rdbFila.Ripple = true;
             this.rdbFila.Size = new System.Drawing.Size(74, 30);
-            this.rdbFila.TabIndex = 0;
+            this.rdbFila.TabIndex = 10;
             this.rdbFila.TabStop = true;
             this.rdbFila.Text = "Em Fila";
             this.rdbFila.UseVisualStyleBackColor = false;
@@ -471,12 +496,14 @@
             this.txtModelo.SelectedText = "";
             this.txtModelo.SelectionLength = 0;
             this.txtModelo.SelectionStart = 0;
-            this.txtModelo.Size = new System.Drawing.Size(166, 23);
+            this.txtModelo.Size = new System.Drawing.Size(138, 23);
             this.txtModelo.TabIndex = 5;
             this.txtModelo.UseSystemPasswordChar = false;
             // 
             // materialLabel2
             // 
+            this.materialLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.BackColor = System.Drawing.Color.Transparent;
             this.materialLabel2.Depth = 0;
@@ -491,6 +518,8 @@
             // 
             // materialLabel3
             // 
+            this.materialLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.BackColor = System.Drawing.Color.Transparent;
             this.materialLabel3.Depth = 0;
@@ -505,21 +534,25 @@
             // 
             // txtOrcamento
             // 
+            this.txtOrcamento.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtOrcamento.Depth = 0;
             this.txtOrcamento.Hint = "R$ 120,00 *";
-            this.txtOrcamento.Location = new System.Drawing.Point(1038, 28);
+            this.txtOrcamento.Location = new System.Drawing.Point(1010, 28);
             this.txtOrcamento.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtOrcamento.Name = "txtOrcamento";
             this.txtOrcamento.PasswordChar = '\0';
             this.txtOrcamento.SelectedText = "";
             this.txtOrcamento.SelectionLength = 0;
             this.txtOrcamento.SelectionStart = 0;
-            this.txtOrcamento.Size = new System.Drawing.Size(104, 23);
+            this.txtOrcamento.Size = new System.Drawing.Size(76, 23);
             this.txtOrcamento.TabIndex = 3;
             this.txtOrcamento.UseSystemPasswordChar = false;
             // 
             // materialLabel4
             // 
+            this.materialLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.BackColor = System.Drawing.Color.Transparent;
             this.materialLabel4.Depth = 0;
@@ -534,12 +567,14 @@
             // 
             // materialLabel7
             // 
+            this.materialLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.BackColor = System.Drawing.Color.Transparent;
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(945, 28);
+            this.materialLabel7.Location = new System.Drawing.Point(917, 28);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(87, 19);
@@ -548,12 +583,14 @@
             // 
             // materialLabel5
             // 
+            this.materialLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.BackColor = System.Drawing.Color.Transparent;
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(605, 72);
+            this.materialLabel5.Location = new System.Drawing.Point(577, 72);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(125, 19);
@@ -571,7 +608,7 @@
             this.txtProduto.SelectedText = "";
             this.txtProduto.SelectionLength = 0;
             this.txtProduto.SelectionStart = 0;
-            this.txtProduto.Size = new System.Drawing.Size(230, 23);
+            this.txtProduto.Size = new System.Drawing.Size(202, 23);
             this.txtProduto.TabIndex = 4;
             this.txtProduto.UseSystemPasswordChar = false;
             // 
@@ -581,14 +618,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSerie.Depth = 0;
             this.txtSerie.Hint = "XXX-125-XXX-125";
-            this.txtSerie.Location = new System.Drawing.Point(736, 72);
+            this.txtSerie.Location = new System.Drawing.Point(708, 72);
             this.txtSerie.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtSerie.Name = "txtSerie";
             this.txtSerie.PasswordChar = '\0';
             this.txtSerie.SelectedText = "";
             this.txtSerie.SelectionLength = 0;
             this.txtSerie.SelectionStart = 0;
-            this.txtSerie.Size = new System.Drawing.Size(404, 23);
+            this.txtSerie.Size = new System.Drawing.Size(378, 23);
             this.txtSerie.TabIndex = 6;
             this.txtSerie.UseSystemPasswordChar = false;
             // 
@@ -601,7 +638,7 @@
             this.materialDivider1.Location = new System.Drawing.Point(21, 154);
             this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1.Name = "materialDivider1";
-            this.materialDivider1.Size = new System.Drawing.Size(1123, 2);
+            this.materialDivider1.Size = new System.Drawing.Size(1065, 2);
             this.materialDivider1.TabIndex = 21;
             this.materialDivider1.Text = "materialDivider1";
             // 
@@ -616,33 +653,37 @@
             this.txtNome.SelectedText = "";
             this.txtNome.SelectionLength = 0;
             this.txtNome.SelectionStart = 0;
-            this.txtNome.Size = new System.Drawing.Size(489, 23);
+            this.txtNome.Size = new System.Drawing.Size(461, 23);
             this.txtNome.TabIndex = 1;
             this.txtNome.UseSystemPasswordChar = false;
             // 
             // txtTelefone
             // 
+            this.txtTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTelefone.Depth = 0;
             this.txtTelefone.Hint = "(21) 99999-9999 *";
-            this.txtTelefone.Location = new System.Drawing.Point(683, 28);
+            this.txtTelefone.Location = new System.Drawing.Point(655, 28);
             this.txtTelefone.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.PasswordChar = '\0';
             this.txtTelefone.SelectedText = "";
             this.txtTelefone.SelectionLength = 0;
             this.txtTelefone.SelectionStart = 0;
-            this.txtTelefone.Size = new System.Drawing.Size(193, 23);
+            this.txtTelefone.Size = new System.Drawing.Size(165, 23);
             this.txtTelefone.TabIndex = 2;
             this.txtTelefone.UseSystemPasswordChar = false;
             // 
             // materialLabel6
             // 
+            this.materialLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.BackColor = System.Drawing.Color.Transparent;
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(605, 28);
+            this.materialLabel6.Location = new System.Drawing.Point(577, 28);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(72, 19);
@@ -689,7 +730,7 @@
             this.panelAdm.Controls.Add(this.lblSair);
             this.panelAdm.Controls.Add(this.picAdm);
             this.panelAdm.Controls.Add(this.materialDivider6);
-            this.panelAdm.Location = new System.Drawing.Point(834, 24);
+            this.panelAdm.Location = new System.Drawing.Point(799, 24);
             this.panelAdm.Name = "panelAdm";
             this.panelAdm.Size = new System.Drawing.Size(328, 38);
             this.panelAdm.TabIndex = 34;
@@ -727,27 +768,130 @@
             this.lblSair.MouseLeave += new System.EventHandler(this.lblSair_MouseLeave);
             this.lblSair.MouseHover += new System.EventHandler(this.lblSair_MouseHover);
             // 
-            // materialContextMenuStrip1
+            // ContextMenuForm
             // 
-            this.materialContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialContextMenuStrip1.Depth = 0;
-            this.materialContextMenuStrip1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialContextMenuStrip1.Name = "materialContextMenuStrip1";
-            this.materialContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.ContextMenuForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ContextMenuForm.Depth = 0;
+            this.ContextMenuForm.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.testeToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.testeToolStripMenuItem1,
+            this.testeToolStripMenuItem2,
+            this.testeToolStripMenuItem3});
+            this.ContextMenuForm.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ContextMenuForm.Name = "materialContextMenuStrip1";
+            this.ContextMenuForm.Size = new System.Drawing.Size(159, 98);
+            // 
+            // testeToolStripMenuItem
+            // 
+            this.testeToolStripMenuItem.Name = "testeToolStripMenuItem";
+            this.testeToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.testeToolStripMenuItem.Text = "Consulta";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(155, 6);
+            // 
+            // testeToolStripMenuItem1
+            // 
+            this.testeToolStripMenuItem1.Name = "testeToolStripMenuItem1";
+            this.testeToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.testeToolStripMenuItem1.Text = "Limpar Campos";
+            // 
+            // testeToolStripMenuItem2
+            // 
+            this.testeToolStripMenuItem2.Name = "testeToolStripMenuItem2";
+            this.testeToolStripMenuItem2.Size = new System.Drawing.Size(158, 22);
+            this.testeToolStripMenuItem2.Text = "Sobre";
+            // 
+            // testeToolStripMenuItem3
+            // 
+            this.testeToolStripMenuItem3.Name = "testeToolStripMenuItem3";
+            this.testeToolStripMenuItem3.Size = new System.Drawing.Size(158, 22);
+            this.testeToolStripMenuItem3.Text = "Sair";
+            // 
+            // ContextMenuRichText
+            // 
+            this.ContextMenuRichText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ContextMenuRichText.Depth = 0;
+            this.ContextMenuRichText.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.cutToolStripMenuItem,
+            this.copyToolStripMenuItem,
+            this.pasteToolStripMenuItem,
+            this.deleteToolStripMenuItem,
+            this.toolStripMenuItem4,
+            this.toolStripMenuItem6});
+            this.ContextMenuRichText.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ContextMenuRichText.Name = "ContextMenuRichText";
+            this.ContextMenuRichText.Size = new System.Drawing.Size(123, 148);
+            // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Enabled = false;
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.undoToolStripMenuItem.Text = "Undo";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(119, 6);
+            // 
+            // cutToolStripMenuItem
+            // 
+            this.cutToolStripMenuItem.Enabled = false;
+            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.cutToolStripMenuItem.Text = "Cut";
+            // 
+            // copyToolStripMenuItem
+            // 
+            this.copyToolStripMenuItem.Enabled = false;
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.copyToolStripMenuItem.Text = "Copy";
+            // 
+            // pasteToolStripMenuItem
+            // 
+            this.pasteToolStripMenuItem.Enabled = false;
+            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.pasteToolStripMenuItem.Text = "Paste";
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Enabled = false;
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(119, 6);
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Enabled = false;
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(122, 22);
+            this.toolStripMenuItem6.Text = "Select All";
             // 
             // Painel_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1165, 670);
+            this.ClientSize = new System.Drawing.Size(1130, 600);
             this.Controls.Add(this.panelAdm);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.materialTabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1165, 670);
+            this.MinimumSize = new System.Drawing.Size(1130, 600);
             this.Name = "Painel_Admin";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Painel_Admin_Load);
             this.statusStrip1.ResumeLayout(false);
@@ -761,6 +905,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picAdm)).EndInit();
             this.panelAdm.ResumeLayout(false);
             this.panelAdm.PerformLayout();
+            this.ContextMenuForm.ResumeLayout(false);
+            this.ContextMenuRichText.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -814,7 +960,21 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
-        private MaterialSkin.Controls.MaterialContextMenuStrip materialContextMenuStrip1;
+        private MaterialSkin.Controls.MaterialContextMenuStrip ContextMenuForm;
+        private System.Windows.Forms.ToolStripMenuItem testeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem testeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem testeToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem testeToolStripMenuItem3;
+        private MaterialSkin.Controls.MaterialContextMenuStrip ContextMenuRichText;
+        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
 
     }
 }
