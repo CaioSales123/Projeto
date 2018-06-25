@@ -30,15 +30,19 @@ namespace E_Sales
             );
         }
 
-        //Define fontes:
+        //Ao abrir:
         private void Painel_Admin_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dbsalesDataSet.dbsales' table. You can move, or remove it, as needed.
             this.dbsalesTableAdapter.Fill(this.dbsalesDataSet.dbsales);
-            groupBox1.Font = new Font("Roboto", 12, FontStyle.Regular);
+            
+
+            //Define fonte:
+            groupBoxStatus.Font = new Font("Roboto", 12, FontStyle.Regular);
             
         }
 
+        //Painel Adm:
         private void lblSair_MouseHover(object sender, EventArgs e)
         {
             lblSair.ForeColor = System.Drawing.Color.Black;
@@ -49,29 +53,28 @@ namespace E_Sales
             lblSair.ForeColor = System.Drawing.Color.White;
         }
 
+        //ToolStrip - Sair:
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //Exibe o formulário Sobre:
         private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
         {
             (new Sobre()).Show();
         }
 
-        private void listviewAdmConsultas_Resize(object sender, EventArgs e)
+        //Limpa Campos:
+        private void btnLimpar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void listviewAdmRecentes_Resize(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void listviewAdmRecentes_ColumnWidthChanging(object sender, ColumnWidthChangingEventArgs e)
-        {
-            
+            txtCliente.Text = "";
+            txtTelefone.Text = "";
+            txtOrcamento.Text = "";
+            txtProduto.Text = "";
+            txtMarca.Text = "";
+            txtSerie.Text = "";
+            txtEndereco.Text = "";
         }
 
 

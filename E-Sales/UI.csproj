@@ -88,6 +88,12 @@
     <Compile Include="Painel_Admin.Designer.cs">
       <DependentUpon>Painel_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Painel_Convidado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painel_Convidado.Designer.cs">
+      <DependentUpon>Painel_Convidado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sobre.cs">
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Painel_Admin.resx">
       <DependentUpon>Painel_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painel_Convidado.resx">
+      <DependentUpon>Painel_Convidado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -176,6 +185,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="favicon.ico" />
+    <None Include="Img\Guest.png" />
     <None Include="Resources\favicon.ico" />
     <None Include="Resources\Mono-Logo.png" />
     <None Include="Resources\Logo1.png" />

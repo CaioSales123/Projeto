@@ -90,8 +90,17 @@ namespace E_Sales
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            (new Painel_Admin()).Show();
+            //Se lblSelecionado for igual a "Administrador", exibirá o frm de Administrador:
+            if (lblSelecionado.Text == "Administrador")
+            {
+                this.Hide();
+                (new Painel_Admin()).Show();
+            }
+            else if (lblSelecionado.Text == "Convidado")
+            {
+                this.Hide();
+                (new Painel_Convidado()).Show();
+            }
             
         }
 

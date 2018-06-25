@@ -1,0 +1,25 @@
+Textbox Lenght:
+
+cliente - 80 V
+tel - 12 V
+orçamento - 9 
+produto - 50 V
+marca 20 V
+numero de serie - 50 V
+endereco - 120 V
+descricao - 300
+status - 1
+
+DataGridColumns:
+
+ID - 3
+cliente - 80
+endereco - 120
+produto - 50
+marca 20
+numero de serie - 50	
+
+tel - 12
+orçamento - 9
+descricao - 300
+status - 1

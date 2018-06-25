@@ -29,22 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Painel_Admin));
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("01");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("02");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("03");
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabConsultas = new MaterialSkin.Controls.MaterialTabSelector();
+            this.tabAdm = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.ContextMenuForm = new MaterialSkin.Controls.MaterialContextMenuStrip();
             this.testeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,11 +43,14 @@
             this.testeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.testeToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.testeToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.materialDivider3 = new MaterialSkin.Controls.MaterialDivider();
+            this.dataGridViewRecentes = new System.Windows.Forms.DataGridView();
+            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.lblObrigatorio = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialFlatButton6 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnAtualizar = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBoxDescricao = new System.Windows.Forms.GroupBox();
             this.richTextBoxDescricao = new System.Windows.Forms.RichTextBox();
             this.ContextMenuRichText = new MaterialSkin.Controls.MaterialContextMenuStrip();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,11 +61,11 @@
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.materialFlatButton4 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.materialFlatButton3 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.materialFlatButton2 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnDeletar = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnInserir = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnLimpar = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnSalvar = new MaterialSkin.Controls.MaterialFlatButton();
+            this.groupBoxStatus = new System.Windows.Forms.GroupBox();
             this.chkPronto = new MaterialSkin.Controls.MaterialCheckBox();
             this.rdbRetirada = new MaterialSkin.Controls.MaterialRadioButton();
             this.rdbManutencao = new MaterialSkin.Controls.MaterialRadioButton();
@@ -86,65 +80,63 @@
             this.txtOrcamento = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtSerie = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtTelefone = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txtModelo = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtMarca = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtEndereco = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtProduto = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txtNome = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtCliente = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.listviewAdmConsultas = new MaterialSkin.Controls.MaterialListView();
-            this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cliente = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.produto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.marca = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tel = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.endereço = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.orcamento = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.materialFlatButton5 = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.materialSingleLineTextField9 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialDivider6 = new MaterialSkin.Controls.MaterialDivider();
-            this.picAdm = new System.Windows.Forms.PictureBox();
-            this.panelAdm = new System.Windows.Forms.Panel();
+            this.painelAdm = new System.Windows.Forms.Panel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.lblSair = new MaterialSkin.Controls.MaterialLabel();
-            this.status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dbsalesDataSet = new E_Sales.dbsalesDataSet();
             this.dbsalesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dbsalesDataSet = new E_Sales.dbsalesDataSet();
             this.dbsalesTableAdapter = new E_Sales.dbsalesDataSetTableAdapters.dbsalesTableAdapter();
-            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.enderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.produtoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.marcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.serieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusStrip1.SuspendLayout();
-            this.materialTabControl1.SuspendLayout();
+            this.telDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.picAdm = new System.Windows.Forms.PictureBox();
+            this.statusStrip.SuspendLayout();
+            this.tabAdm.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.ContextMenuForm.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRecentes)).BeginInit();
+            this.groupBoxDescricao.SuspendLayout();
             this.ContextMenuRichText.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupBoxStatus.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAdm)).BeginInit();
-            this.panelAdm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbsalesDataSet)).BeginInit();
+            this.painelAdm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dbsalesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbsalesDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdm)).BeginInit();
             this.SuspendLayout();
             // 
-            // statusStrip1
+            // statusStrip
             // 
-            this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripDropDownButton1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 578);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1130, 22);
-            this.statusStrip1.TabIndex = 22;
-            this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip.Location = new System.Drawing.Point(0, 578);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(1130, 22);
+            this.statusStrip.TabIndex = 22;
+            this.statusStrip.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
@@ -152,95 +144,50 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(43, 17);
             this.toolStripStatusLabel1.Text = "Pronto";
             // 
-            // toolStripDropDownButton1
+            // tabConsultas
             // 
-            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sobreToolStripMenuItem,
-            this.ajudaToolStripMenuItem,
-            this.calculadoraToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.sairToolStripMenuItem});
-            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
-            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(29, 20);
-            this.toolStripDropDownButton1.Text = "Ferramentas";
+            this.tabConsultas.BaseTabControl = this.tabAdm;
+            this.tabConsultas.Depth = 0;
+            this.tabConsultas.Location = new System.Drawing.Point(0, 25);
+            this.tabConsultas.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tabConsultas.Name = "tabConsultas";
+            this.tabConsultas.Size = new System.Drawing.Size(315, 38);
+            this.tabConsultas.TabIndex = 0;
+            this.tabConsultas.Text = "materialTabSelector1";
             // 
-            // sobreToolStripMenuItem
+            // tabAdm
             // 
-            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.sobreToolStripMenuItem.Text = "Sobre";
-            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
-            // 
-            // ajudaToolStripMenuItem
-            // 
-            this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.ajudaToolStripMenuItem.Text = "Ajuda";
-            // 
-            // calculadoraToolStripMenuItem
-            // 
-            this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
-            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.calculadoraToolStripMenuItem.Text = "Calculadora";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
-            // 
-            // sairToolStripMenuItem
-            // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.sairToolStripMenuItem.Text = "Sair";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
-            // 
-            // materialTabSelector1
-            // 
-            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
-            this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Location = new System.Drawing.Point(0, 24);
-            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(315, 38);
-            this.materialTabSelector1.TabIndex = 0;
-            this.materialTabSelector1.Text = "materialTabSelector1";
-            // 
-            // materialTabControl1
-            // 
-            this.materialTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabAdm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialTabControl1.Controls.Add(this.tabPage1);
-            this.materialTabControl1.Controls.Add(this.tabPage2);
-            this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Location = new System.Drawing.Point(0, 68);
-            this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabControl1.Name = "materialTabControl1";
-            this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1131, 510);
-            this.materialTabControl1.TabIndex = 33;
+            this.tabAdm.Controls.Add(this.tabPage1);
+            this.tabAdm.Controls.Add(this.tabPage2);
+            this.tabAdm.Depth = 0;
+            this.tabAdm.Location = new System.Drawing.Point(0, 65);
+            this.tabAdm.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tabAdm.Name = "tabAdm";
+            this.tabAdm.SelectedIndex = 0;
+            this.tabAdm.Size = new System.Drawing.Size(1131, 510);
+            this.tabAdm.TabIndex = 33;
             // 
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage1.ContextMenuStrip = this.ContextMenuForm;
+            this.tabPage1.Controls.Add(this.materialDivider3);
+            this.tabPage1.Controls.Add(this.dataGridViewRecentes);
             this.tabPage1.Controls.Add(this.materialLabel10);
-            this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.Controls.Add(this.lblObrigatorio);
             this.tabPage1.Controls.Add(this.materialLabel1);
-            this.tabPage1.Controls.Add(this.materialFlatButton6);
+            this.tabPage1.Controls.Add(this.btnAtualizar);
             this.tabPage1.Controls.Add(this.materialDivider2);
-            this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Controls.Add(this.materialFlatButton4);
-            this.tabPage1.Controls.Add(this.materialFlatButton3);
-            this.tabPage1.Controls.Add(this.materialFlatButton2);
-            this.tabPage1.Controls.Add(this.materialFlatButton1);
-            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.groupBoxDescricao);
+            this.tabPage1.Controls.Add(this.btnDeletar);
+            this.tabPage1.Controls.Add(this.btnInserir);
+            this.tabPage1.Controls.Add(this.btnLimpar);
+            this.tabPage1.Controls.Add(this.btnSalvar);
+            this.tabPage1.Controls.Add(this.groupBoxStatus);
             this.tabPage1.Controls.Add(this.materialLabel2);
             this.tabPage1.Controls.Add(this.materialLabel3);
             this.tabPage1.Controls.Add(this.materialLabel4);
@@ -251,10 +198,10 @@
             this.tabPage1.Controls.Add(this.txtOrcamento);
             this.tabPage1.Controls.Add(this.txtSerie);
             this.tabPage1.Controls.Add(this.txtTelefone);
-            this.tabPage1.Controls.Add(this.txtModelo);
-            this.tabPage1.Controls.Add(this.materialSingleLineTextField1);
+            this.tabPage1.Controls.Add(this.txtMarca);
+            this.tabPage1.Controls.Add(this.txtEndereco);
             this.tabPage1.Controls.Add(this.txtProduto);
-            this.tabPage1.Controls.Add(this.txtNome);
+            this.tabPage1.Controls.Add(this.txtCliente);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -305,6 +252,81 @@
             this.testeToolStripMenuItem3.Size = new System.Drawing.Size(158, 22);
             this.testeToolStripMenuItem3.Text = "Sair";
             // 
+            // materialDivider3
+            // 
+            this.materialDivider3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.materialDivider3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialDivider3.Depth = 0;
+            this.materialDivider3.Location = new System.Drawing.Point(591, 439);
+            this.materialDivider3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialDivider3.Name = "materialDivider3";
+            this.materialDivider3.Size = new System.Drawing.Size(504, 2);
+            this.materialDivider3.TabIndex = 44;
+            this.materialDivider3.Text = "materialDivider3";
+            // 
+            // dataGridViewRecentes
+            // 
+            this.dataGridViewRecentes.AllowUserToAddRows = false;
+            this.dataGridViewRecentes.AllowUserToDeleteRows = false;
+            this.dataGridViewRecentes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewRecentes.AutoGenerateColumns = false;
+            this.dataGridViewRecentes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewRecentes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders;
+            this.dataGridViewRecentes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.dataGridViewRecentes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewRecentes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewRecentes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewRecentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewRecentes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nomeDataGridViewTextBoxColumn,
+            this.enderecoDataGridViewTextBoxColumn,
+            this.produtoDataGridViewTextBoxColumn,
+            this.marcaDataGridViewTextBoxColumn,
+            this.serieDataGridViewTextBoxColumn,
+            this.telDataGridViewTextBoxColumn,
+            this.status,
+            this.descricao});
+            this.dataGridViewRecentes.DataSource = this.dbsalesBindingSource;
+            this.dataGridViewRecentes.Location = new System.Drawing.Point(591, 207);
+            this.dataGridViewRecentes.Name = "dataGridViewRecentes";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewRecentes.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewRecentes.Size = new System.Drawing.Size(504, 217);
+            this.dataGridViewRecentes.TabIndex = 43;
+            // 
+            // materialLabel10
+            // 
+            this.materialLabel10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.materialLabel10.AutoSize = true;
+            this.materialLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.materialLabel10.Depth = 0;
+            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel10.Location = new System.Drawing.Point(587, 185);
+            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel10.Name = "materialLabel10";
+            this.materialLabel10.Size = new System.Drawing.Size(197, 19);
+            this.materialLabel10.TabIndex = 42;
+            this.materialLabel10.Text = "Adicionados Recentemente:";
+            // 
             // lblObrigatorio
             // 
             this.lblObrigatorio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -337,22 +359,22 @@
             this.materialLabel1.TabIndex = 38;
             this.materialLabel1.Text = "Endereço:";
             // 
-            // materialFlatButton6
+            // btnAtualizar
             // 
-            this.materialFlatButton6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialFlatButton6.AutoSize = true;
-            this.materialFlatButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton6.Depth = 0;
-            this.materialFlatButton6.Icon = null;
-            this.materialFlatButton6.Location = new System.Drawing.Point(923, 439);
-            this.materialFlatButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton6.Name = "materialFlatButton6";
-            this.materialFlatButton6.Primary = false;
-            this.materialFlatButton6.Size = new System.Drawing.Size(94, 36);
-            this.materialFlatButton6.TabIndex = 15;
-            this.materialFlatButton6.Text = "Atualizar";
-            this.materialFlatButton6.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAtualizar.AutoSize = true;
+            this.btnAtualizar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAtualizar.Depth = 0;
+            this.btnAtualizar.Icon = null;
+            this.btnAtualizar.Location = new System.Drawing.Point(914, 442);
+            this.btnAtualizar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnAtualizar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Primary = false;
+            this.btnAtualizar.Size = new System.Drawing.Size(94, 36);
+            this.btnAtualizar.TabIndex = 15;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
             // 
             // materialDivider2
             // 
@@ -367,30 +389,30 @@
             this.materialDivider2.TabIndex = 33;
             this.materialDivider2.Text = "materialDivider2";
             // 
-            // groupBox2
+            // groupBoxDescricao
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.groupBox2.Controls.Add(this.richTextBoxDescricao);
-            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(19, 187);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(533, 123);
-            this.groupBox2.TabIndex = 21;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Descrição";
+            this.groupBoxDescricao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.groupBoxDescricao.Controls.Add(this.richTextBoxDescricao);
+            this.groupBoxDescricao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBoxDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.groupBoxDescricao.ForeColor = System.Drawing.Color.White;
+            this.groupBoxDescricao.Location = new System.Drawing.Point(19, 187);
+            this.groupBoxDescricao.Name = "groupBoxDescricao";
+            this.groupBoxDescricao.Size = new System.Drawing.Size(533, 123);
+            this.groupBoxDescricao.TabIndex = 21;
+            this.groupBoxDescricao.TabStop = false;
+            this.groupBoxDescricao.Text = "Descrição";
             // 
             // richTextBoxDescricao
             // 
+            this.richTextBoxDescricao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.richTextBoxDescricao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.richTextBoxDescricao.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxDescricao.ContextMenuStrip = this.ContextMenuRichText;
-            this.richTextBoxDescricao.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxDescricao.ForeColor = System.Drawing.Color.White;
             this.richTextBoxDescricao.Location = new System.Drawing.Point(3, 20);
             this.richTextBoxDescricao.Name = "richTextBoxDescricao";
-            this.richTextBoxDescricao.Size = new System.Drawing.Size(527, 100);
+            this.richTextBoxDescricao.Size = new System.Drawing.Size(527, 97);
             this.richTextBoxDescricao.TabIndex = 9;
             this.richTextBoxDescricao.Text = "Descrição do produto e de seu defeito.";
             // 
@@ -463,93 +485,94 @@
             this.toolStripMenuItem6.Size = new System.Drawing.Size(122, 22);
             this.toolStripMenuItem6.Text = "Select All";
             // 
-            // materialFlatButton4
+            // btnDeletar
             // 
-            this.materialFlatButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialFlatButton4.AutoSize = true;
-            this.materialFlatButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton4.Depth = 0;
-            this.materialFlatButton4.Icon = null;
-            this.materialFlatButton4.Location = new System.Drawing.Point(1016, 439);
-            this.materialFlatButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton4.Name = "materialFlatButton4";
-            this.materialFlatButton4.Primary = false;
-            this.materialFlatButton4.Size = new System.Drawing.Size(79, 36);
-            this.materialFlatButton4.TabIndex = 16;
-            this.materialFlatButton4.Text = "Deletar";
-            this.materialFlatButton4.UseVisualStyleBackColor = true;
+            this.btnDeletar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDeletar.AutoSize = true;
+            this.btnDeletar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnDeletar.Depth = 0;
+            this.btnDeletar.Icon = null;
+            this.btnDeletar.Location = new System.Drawing.Point(1016, 442);
+            this.btnDeletar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnDeletar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Primary = false;
+            this.btnDeletar.Size = new System.Drawing.Size(79, 36);
+            this.btnDeletar.TabIndex = 16;
+            this.btnDeletar.Text = "Deletar";
+            this.btnDeletar.UseVisualStyleBackColor = true;
             // 
-            // materialFlatButton3
+            // btnInserir
             // 
-            this.materialFlatButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialFlatButton3.AutoSize = true;
-            this.materialFlatButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton3.Depth = 0;
-            this.materialFlatButton3.Icon = null;
-            this.materialFlatButton3.Location = new System.Drawing.Point(814, 439);
-            this.materialFlatButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton3.Name = "materialFlatButton3";
-            this.materialFlatButton3.Primary = false;
-            this.materialFlatButton3.Size = new System.Drawing.Size(113, 36);
-            this.materialFlatButton3.TabIndex = 14;
-            this.materialFlatButton3.Text = "Inserir Novo";
-            this.materialFlatButton3.UseVisualStyleBackColor = true;
-            // 
-            // materialFlatButton2
-            // 
-            this.materialFlatButton2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnInserir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialFlatButton2.AutoSize = true;
-            this.materialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton2.Depth = 0;
-            this.materialFlatButton2.Icon = null;
-            this.materialFlatButton2.Location = new System.Drawing.Point(964, 109);
-            this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton2.Name = "materialFlatButton2";
-            this.materialFlatButton2.Primary = false;
-            this.materialFlatButton2.Size = new System.Drawing.Size(131, 36);
-            this.materialFlatButton2.TabIndex = 8;
-            this.materialFlatButton2.Text = "Limpar Campos";
-            this.materialFlatButton2.UseVisualStyleBackColor = true;
+            this.btnInserir.AutoSize = true;
+            this.btnInserir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnInserir.Depth = 0;
+            this.btnInserir.Icon = null;
+            this.btnInserir.Location = new System.Drawing.Point(843, 109);
+            this.btnInserir.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnInserir.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Primary = false;
+            this.btnInserir.Size = new System.Drawing.Size(113, 36);
+            this.btnInserir.TabIndex = 14;
+            this.btnInserir.Text = "Inserir Novo";
+            this.btnInserir.UseVisualStyleBackColor = true;
             // 
-            // materialFlatButton1
+            // btnLimpar
             // 
-            this.materialFlatButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnLimpar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialFlatButton1.AutoSize = true;
-            this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.Icon = null;
-            this.materialFlatButton1.Location = new System.Drawing.Point(893, 109);
-            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton1.Name = "materialFlatButton1";
-            this.materialFlatButton1.Primary = false;
-            this.materialFlatButton1.Size = new System.Drawing.Size(72, 36);
-            this.materialFlatButton1.TabIndex = 8;
-            this.materialFlatButton1.Text = "Salvar";
-            this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.btnLimpar.AutoSize = true;
+            this.btnLimpar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnLimpar.Depth = 0;
+            this.btnLimpar.Icon = null;
+            this.btnLimpar.Location = new System.Drawing.Point(964, 109);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnLimpar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Primary = false;
+            this.btnLimpar.Size = new System.Drawing.Size(131, 36);
+            this.btnLimpar.TabIndex = 8;
+            this.btnLimpar.Text = "Limpar Campos";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // groupBox1
+            // btnSalvar
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.groupBox1.Controls.Add(this.chkPronto);
-            this.groupBox1.Controls.Add(this.rdbRetirada);
-            this.groupBox1.Controls.Add(this.rdbManutencao);
-            this.groupBox1.Controls.Add(this.rdbFila);
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(19, 340);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(533, 135);
-            this.groupBox1.TabIndex = 20;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Status *";
+            this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalvar.AutoSize = true;
+            this.btnSalvar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnSalvar.Depth = 0;
+            this.btnSalvar.Icon = null;
+            this.btnSalvar.Location = new System.Drawing.Point(834, 442);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnSalvar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Primary = false;
+            this.btnSalvar.Size = new System.Drawing.Size(72, 36);
+            this.btnSalvar.TabIndex = 8;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxStatus
+            // 
+            this.groupBoxStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBoxStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.groupBoxStatus.Controls.Add(this.chkPronto);
+            this.groupBoxStatus.Controls.Add(this.rdbRetirada);
+            this.groupBoxStatus.Controls.Add(this.rdbManutencao);
+            this.groupBoxStatus.Controls.Add(this.rdbFila);
+            this.groupBoxStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBoxStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.groupBoxStatus.ForeColor = System.Drawing.Color.White;
+            this.groupBoxStatus.Location = new System.Drawing.Point(19, 340);
+            this.groupBoxStatus.Name = "groupBoxStatus";
+            this.groupBoxStatus.Size = new System.Drawing.Size(533, 135);
+            this.groupBoxStatus.TabIndex = 20;
+            this.groupBoxStatus.TabStop = false;
+            this.groupBoxStatus.Text = "Status *";
             // 
             // chkPronto
             // 
@@ -678,7 +701,7 @@
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(917, 28);
+            this.materialLabel7.Location = new System.Drawing.Point(926, 28);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(87, 19);
@@ -710,7 +733,7 @@
             this.materialDivider1.Location = new System.Drawing.Point(21, 154);
             this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1.Name = "materialDivider1";
-            this.materialDivider1.Size = new System.Drawing.Size(1065, 2);
+            this.materialDivider1.Size = new System.Drawing.Size(1074, 2);
             this.materialDivider1.TabIndex = 21;
             this.materialDivider1.Text = "materialDivider1";
             // 
@@ -736,8 +759,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtOrcamento.Depth = 0;
             this.txtOrcamento.Hint = "R$ 120,00 *";
-            this.txtOrcamento.Location = new System.Drawing.Point(1010, 28);
-            this.txtOrcamento.MaxLength = 32767;
+            this.txtOrcamento.Location = new System.Drawing.Point(1019, 28);
+            this.txtOrcamento.MaxLength = 9;
             this.txtOrcamento.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtOrcamento.Name = "txtOrcamento";
             this.txtOrcamento.PasswordChar = '\0';
@@ -756,14 +779,14 @@
             this.txtSerie.Depth = 0;
             this.txtSerie.Hint = "XXX-125-XXX-125";
             this.txtSerie.Location = new System.Drawing.Point(708, 72);
-            this.txtSerie.MaxLength = 32767;
+            this.txtSerie.MaxLength = 50;
             this.txtSerie.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtSerie.Name = "txtSerie";
             this.txtSerie.PasswordChar = '\0';
             this.txtSerie.SelectedText = "";
             this.txtSerie.SelectionLength = 0;
             this.txtSerie.SelectionStart = 0;
-            this.txtSerie.Size = new System.Drawing.Size(378, 23);
+            this.txtSerie.Size = new System.Drawing.Size(387, 23);
             this.txtSerie.TabIndex = 6;
             this.txtSerie.TabStop = false;
             this.txtSerie.UseSystemPasswordChar = false;
@@ -775,7 +798,7 @@
             this.txtTelefone.Depth = 0;
             this.txtTelefone.Hint = "(21) 99999-9999 *";
             this.txtTelefone.Location = new System.Drawing.Point(655, 28);
-            this.txtTelefone.MaxLength = 32767;
+            this.txtTelefone.MaxLength = 12;
             this.txtTelefone.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.PasswordChar = '\0';
@@ -787,47 +810,47 @@
             this.txtTelefone.TabStop = false;
             this.txtTelefone.UseSystemPasswordChar = false;
             // 
-            // txtModelo
+            // txtMarca
             // 
-            this.txtModelo.Depth = 0;
-            this.txtModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.txtModelo.Hint = "LG *";
-            this.txtModelo.Location = new System.Drawing.Point(404, 72);
-            this.txtModelo.MaxLength = 32767;
-            this.txtModelo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtModelo.Name = "txtModelo";
-            this.txtModelo.PasswordChar = '\0';
-            this.txtModelo.SelectedText = "";
-            this.txtModelo.SelectionLength = 0;
-            this.txtModelo.SelectionStart = 0;
-            this.txtModelo.Size = new System.Drawing.Size(138, 23);
-            this.txtModelo.TabIndex = 5;
-            this.txtModelo.TabStop = false;
-            this.txtModelo.UseSystemPasswordChar = false;
+            this.txtMarca.Depth = 0;
+            this.txtMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.txtMarca.Hint = "LG *";
+            this.txtMarca.Location = new System.Drawing.Point(404, 72);
+            this.txtMarca.MaxLength = 20;
+            this.txtMarca.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.PasswordChar = '\0';
+            this.txtMarca.SelectedText = "";
+            this.txtMarca.SelectionLength = 0;
+            this.txtMarca.SelectionStart = 0;
+            this.txtMarca.Size = new System.Drawing.Size(138, 23);
+            this.txtMarca.TabIndex = 5;
+            this.txtMarca.TabStop = false;
+            this.txtMarca.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField1
+            // txtEndereco
             // 
-            this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.Hint = "Travessa Bonfim, 73, Segunda Casa";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(97, 117);
-            this.materialSingleLineTextField1.MaxLength = 32767;
-            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.PasswordChar = '\0';
-            this.materialSingleLineTextField1.SelectedText = "";
-            this.materialSingleLineTextField1.SelectionLength = 0;
-            this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(461, 23);
-            this.materialSingleLineTextField1.TabIndex = 7;
-            this.materialSingleLineTextField1.TabStop = false;
-            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            this.txtEndereco.Depth = 0;
+            this.txtEndereco.Hint = "Travessa Bonfim, 73, Segunda Casa";
+            this.txtEndereco.Location = new System.Drawing.Point(97, 117);
+            this.txtEndereco.MaxLength = 120;
+            this.txtEndereco.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.PasswordChar = '\0';
+            this.txtEndereco.SelectedText = "";
+            this.txtEndereco.SelectionLength = 0;
+            this.txtEndereco.SelectionStart = 0;
+            this.txtEndereco.Size = new System.Drawing.Size(445, 23);
+            this.txtEndereco.TabIndex = 7;
+            this.txtEndereco.TabStop = false;
+            this.txtEndereco.UseSystemPasswordChar = false;
             // 
             // txtProduto
             // 
             this.txtProduto.Depth = 0;
             this.txtProduto.Hint = "Monitor LED *";
             this.txtProduto.Location = new System.Drawing.Point(81, 72);
-            this.txtProduto.MaxLength = 32767;
+            this.txtProduto.MaxLength = 50;
             this.txtProduto.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtProduto.Name = "txtProduto";
             this.txtProduto.PasswordChar = '\0';
@@ -839,27 +862,26 @@
             this.txtProduto.TabStop = false;
             this.txtProduto.UseSystemPasswordChar = false;
             // 
-            // txtNome
+            // txtCliente
             // 
-            this.txtNome.Depth = 0;
-            this.txtNome.Hint = "Nome do Cliente *";
-            this.txtNome.Location = new System.Drawing.Point(81, 28);
-            this.txtNome.MaxLength = 32767;
-            this.txtNome.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtNome.Name = "txtNome";
-            this.txtNome.PasswordChar = '\0';
-            this.txtNome.SelectedText = "";
-            this.txtNome.SelectionLength = 0;
-            this.txtNome.SelectionStart = 0;
-            this.txtNome.Size = new System.Drawing.Size(461, 23);
-            this.txtNome.TabIndex = 1;
-            this.txtNome.TabStop = false;
-            this.txtNome.UseSystemPasswordChar = false;
+            this.txtCliente.Depth = 0;
+            this.txtCliente.Hint = "Nome do Cliente *";
+            this.txtCliente.Location = new System.Drawing.Point(81, 28);
+            this.txtCliente.MaxLength = 80;
+            this.txtCliente.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.PasswordChar = '\0';
+            this.txtCliente.SelectedText = "";
+            this.txtCliente.SelectionLength = 0;
+            this.txtCliente.SelectionStart = 0;
+            this.txtCliente.Size = new System.Drawing.Size(461, 23);
+            this.txtCliente.TabIndex = 1;
+            this.txtCliente.TabStop = false;
+            this.txtCliente.UseSystemPasswordChar = false;
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage2.Controls.Add(this.listviewAdmConsultas);
             this.tabPage2.Controls.Add(this.materialFlatButton5);
             this.tabPage2.Controls.Add(this.materialLabel9);
             this.tabPage2.Controls.Add(this.materialSingleLineTextField9);
@@ -869,92 +891,6 @@
             this.tabPage2.Size = new System.Drawing.Size(1123, 484);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consultas";
-            // 
-            // listviewAdmConsultas
-            // 
-            this.listviewAdmConsultas.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.listviewAdmConsultas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listviewAdmConsultas.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.listviewAdmConsultas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listviewAdmConsultas.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.id,
-            this.cliente,
-            this.produto,
-            this.marca,
-            this.tel,
-            this.endereço,
-            this.orcamento,
-            this.status});
-            this.listviewAdmConsultas.Depth = 0;
-            this.listviewAdmConsultas.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listviewAdmConsultas.FullRowSelect = true;
-            this.listviewAdmConsultas.GridLines = true;
-            this.listviewAdmConsultas.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.listviewAdmConsultas.HoverSelection = true;
-            this.listviewAdmConsultas.ImeMode = System.Windows.Forms.ImeMode.Off;
-            listViewItem1.IndentCount = 2;
-            listViewItem1.StateImageIndex = 0;
-            listViewItem2.StateImageIndex = 0;
-            listViewItem3.StateImageIndex = 0;
-            this.listviewAdmConsultas.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3});
-            this.listviewAdmConsultas.Location = new System.Drawing.Point(8, 48);
-            this.listviewAdmConsultas.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.listviewAdmConsultas.MouseState = MaterialSkin.MouseState.OUT;
-            this.listviewAdmConsultas.Name = "listviewAdmConsultas";
-            this.listviewAdmConsultas.OwnerDraw = true;
-            this.listviewAdmConsultas.Scrollable = false;
-            this.listviewAdmConsultas.Size = new System.Drawing.Size(1106, 430);
-            this.listviewAdmConsultas.Sorting = System.Windows.Forms.SortOrder.Ascending;
-            this.listviewAdmConsultas.TabIndex = 61;
-            this.listviewAdmConsultas.TabStop = false;
-            this.listviewAdmConsultas.UseCompatibleStateImageBehavior = false;
-            this.listviewAdmConsultas.View = System.Windows.Forms.View.Details;
-            this.listviewAdmConsultas.VirtualListSize = 10;
-            this.listviewAdmConsultas.Resize += new System.EventHandler(this.listviewAdmConsultas_Resize);
-            // 
-            // id
-            // 
-            this.id.Text = "ID";
-            // 
-            // cliente
-            // 
-            this.cliente.Text = "Cliente";
-            this.cliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.cliente.Width = 300;
-            // 
-            // produto
-            // 
-            this.produto.Text = "Produto";
-            this.produto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.produto.Width = 150;
-            // 
-            // marca
-            // 
-            this.marca.Text = "Marca";
-            this.marca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.marca.Width = 150;
-            // 
-            // tel
-            // 
-            this.tel.Text = "Telefone";
-            this.tel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tel.Width = 150;
-            // 
-            // endereço
-            // 
-            this.endereço.Text = "Endereço";
-            this.endereço.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.endereço.Width = 400;
-            // 
-            // orcamento
-            // 
-            this.orcamento.Text = "Orçamento";
-            this.orcamento.Width = 150;
             // 
             // materialFlatButton5
             // 
@@ -1014,29 +950,19 @@
             this.materialDivider6.TabIndex = 35;
             this.materialDivider6.Text = "materialDivider6";
             // 
-            // picAdm
+            // painelAdm
             // 
-            this.picAdm.Image = ((System.Drawing.Image)(resources.GetObject("picAdm.Image")));
-            this.picAdm.Location = new System.Drawing.Point(10, 0);
-            this.picAdm.Name = "picAdm";
-            this.picAdm.Size = new System.Drawing.Size(43, 38);
-            this.picAdm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAdm.TabIndex = 36;
-            this.picAdm.TabStop = false;
-            // 
-            // panelAdm
-            // 
-            this.panelAdm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelAdm.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panelAdm.BackColor = System.Drawing.Color.Transparent;
-            this.panelAdm.Controls.Add(this.materialLabel8);
-            this.panelAdm.Controls.Add(this.lblSair);
-            this.panelAdm.Controls.Add(this.picAdm);
-            this.panelAdm.Controls.Add(this.materialDivider6);
-            this.panelAdm.Location = new System.Drawing.Point(799, 24);
-            this.panelAdm.Name = "panelAdm";
-            this.panelAdm.Size = new System.Drawing.Size(328, 38);
-            this.panelAdm.TabIndex = 34;
+            this.painelAdm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.painelAdm.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.painelAdm.BackColor = System.Drawing.Color.Transparent;
+            this.painelAdm.Controls.Add(this.materialLabel8);
+            this.painelAdm.Controls.Add(this.lblSair);
+            this.painelAdm.Controls.Add(this.picAdm);
+            this.painelAdm.Controls.Add(this.materialDivider6);
+            this.painelAdm.Location = new System.Drawing.Point(799, 25);
+            this.painelAdm.Name = "painelAdm";
+            this.painelAdm.Size = new System.Drawing.Size(328, 38);
+            this.painelAdm.TabIndex = 34;
             // 
             // materialLabel8
             // 
@@ -1071,174 +997,162 @@
             this.lblSair.MouseLeave += new System.EventHandler(this.lblSair_MouseLeave);
             this.lblSair.MouseHover += new System.EventHandler(this.lblSair_MouseHover);
             // 
-            // status
+            // dbsalesBindingSource
             // 
-            this.status.Text = "Status";
-            this.status.Width = 130;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            this.dataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Roboto", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Highlight;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.nomeDataGridViewTextBoxColumn,
-            this.enderecoDataGridViewTextBoxColumn,
-            this.produtoDataGridViewTextBoxColumn,
-            this.marcaDataGridViewTextBoxColumn,
-            this.serieDataGridViewTextBoxColumn});
-            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dataGridView1.DataSource = this.dbsalesBindingSource;
-            this.dataGridView1.GridColor = System.Drawing.Color.Gray;
-            this.dataGridView1.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.dataGridView1.Location = new System.Drawing.Point(591, 207);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataGridView1.Size = new System.Drawing.Size(504, 223);
-            this.dataGridView1.TabIndex = 41;
-            this.dataGridView1.TabStop = false;
+            this.dbsalesBindingSource.DataMember = "dbsales";
+            this.dbsalesBindingSource.DataSource = this.dbsalesDataSet;
             // 
             // dbsalesDataSet
             // 
             this.dbsalesDataSet.DataSetName = "dbsalesDataSet";
             this.dbsalesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dbsalesBindingSource
-            // 
-            this.dbsalesBindingSource.DataMember = "dbsales";
-            this.dbsalesBindingSource.DataSource = this.dbsalesDataSet;
-            // 
             // dbsalesTableAdapter
             // 
             this.dbsalesTableAdapter.ClearBeforeFill = true;
             // 
-            // materialLabel10
-            // 
-            this.materialLabel10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialLabel10.AutoSize = true;
-            this.materialLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.materialLabel10.Depth = 0;
-            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel10.Location = new System.Drawing.Point(587, 185);
-            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel10.Name = "materialLabel10";
-            this.materialLabel10.Size = new System.Drawing.Size(197, 19);
-            this.materialLabel10.TabIndex = 42;
-            this.materialLabel10.Text = "Adicionados Recentemente:";
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.FillWeight = 45.55099F;
-            this.idDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 20;
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nomeDataGridViewTextBoxColumn
             // 
             this.nomeDataGridViewTextBoxColumn.DataPropertyName = "nome";
-            this.nomeDataGridViewTextBoxColumn.FillWeight = 80.62527F;
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Cliente";
-            this.nomeDataGridViewTextBoxColumn.MinimumWidth = 50;
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "nome";
             this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // enderecoDataGridViewTextBoxColumn
             // 
             this.enderecoDataGridViewTextBoxColumn.DataPropertyName = "endereco";
-            this.enderecoDataGridViewTextBoxColumn.FillWeight = 251.6595F;
-            this.enderecoDataGridViewTextBoxColumn.HeaderText = "Endereço";
-            this.enderecoDataGridViewTextBoxColumn.MinimumWidth = 80;
+            this.enderecoDataGridViewTextBoxColumn.HeaderText = "endereco";
             this.enderecoDataGridViewTextBoxColumn.Name = "enderecoDataGridViewTextBoxColumn";
-            this.enderecoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // produtoDataGridViewTextBoxColumn
             // 
             this.produtoDataGridViewTextBoxColumn.DataPropertyName = "produto";
-            this.produtoDataGridViewTextBoxColumn.FillWeight = 60.91371F;
-            this.produtoDataGridViewTextBoxColumn.HeaderText = "Produto";
-            this.produtoDataGridViewTextBoxColumn.MinimumWidth = 20;
+            this.produtoDataGridViewTextBoxColumn.HeaderText = "produto";
             this.produtoDataGridViewTextBoxColumn.Name = "produtoDataGridViewTextBoxColumn";
-            this.produtoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // marcaDataGridViewTextBoxColumn
             // 
             this.marcaDataGridViewTextBoxColumn.DataPropertyName = "marca";
-            this.marcaDataGridViewTextBoxColumn.FillWeight = 80.62527F;
-            this.marcaDataGridViewTextBoxColumn.HeaderText = "Marca";
-            this.marcaDataGridViewTextBoxColumn.MinimumWidth = 20;
+            this.marcaDataGridViewTextBoxColumn.HeaderText = "marca";
             this.marcaDataGridViewTextBoxColumn.Name = "marcaDataGridViewTextBoxColumn";
-            this.marcaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // serieDataGridViewTextBoxColumn
             // 
             this.serieDataGridViewTextBoxColumn.DataPropertyName = "serie";
-            this.serieDataGridViewTextBoxColumn.FillWeight = 80.62527F;
-            this.serieDataGridViewTextBoxColumn.HeaderText = "Série";
-            this.serieDataGridViewTextBoxColumn.MinimumWidth = 20;
+            this.serieDataGridViewTextBoxColumn.HeaderText = "serie";
             this.serieDataGridViewTextBoxColumn.Name = "serieDataGridViewTextBoxColumn";
-            this.serieDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // telDataGridViewTextBoxColumn
+            // 
+            this.telDataGridViewTextBoxColumn.DataPropertyName = "tel";
+            this.telDataGridViewTextBoxColumn.HeaderText = "tel";
+            this.telDataGridViewTextBoxColumn.Name = "telDataGridViewTextBoxColumn";
+            // 
+            // status
+            // 
+            this.status.DataPropertyName = "status";
+            this.status.HeaderText = "status";
+            this.status.Name = "status";
+            // 
+            // descricao
+            // 
+            this.descricao.DataPropertyName = "descricao";
+            this.descricao.HeaderText = "descricao";
+            this.descricao.Name = "descricao";
+            // 
+            // toolStripDropDownButton1
+            // 
+            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sobreToolStripMenuItem,
+            this.ajudaToolStripMenuItem,
+            this.calculadoraToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.sairToolStripMenuItem});
+            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
+            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(29, 20);
+            this.toolStripDropDownButton1.Text = "Ferramentas";
+            // 
+            // sobreToolStripMenuItem
+            // 
+            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.sobreToolStripMenuItem.Text = "Sobre";
+            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
+            // 
+            // ajudaToolStripMenuItem
+            // 
+            this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
+            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.ajudaToolStripMenuItem.Text = "Ajuda";
+            // 
+            // calculadoraToolStripMenuItem
+            // 
+            this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
+            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.calculadoraToolStripMenuItem.Text = "Calculadora";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(134, 6);
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // picAdm
+            // 
+            this.picAdm.Image = ((System.Drawing.Image)(resources.GetObject("picAdm.Image")));
+            this.picAdm.Location = new System.Drawing.Point(10, 0);
+            this.picAdm.Name = "picAdm";
+            this.picAdm.Size = new System.Drawing.Size(43, 38);
+            this.picAdm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdm.TabIndex = 36;
+            this.picAdm.TabStop = false;
             // 
             // Painel_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1130, 600);
-            this.Controls.Add(this.panelAdm);
-            this.Controls.Add(this.materialTabSelector1);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.materialTabControl1);
+            this.Controls.Add(this.tabAdm);
+            this.Controls.Add(this.tabConsultas);
+            this.Controls.Add(this.statusStrip);
+            this.Controls.Add(this.painelAdm);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1130, 600);
             this.Name = "Painel_Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Painel_Admin_Load);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            this.materialTabControl1.ResumeLayout(false);
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
+            this.tabAdm.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.ContextMenuForm.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRecentes)).EndInit();
+            this.groupBoxDescricao.ResumeLayout(false);
             this.ContextMenuRichText.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBoxStatus.ResumeLayout(false);
+            this.groupBoxStatus.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAdm)).EndInit();
-            this.panelAdm.ResumeLayout(false);
-            this.panelAdm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbsalesDataSet)).EndInit();
+            this.painelAdm.ResumeLayout(false);
+            this.painelAdm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dbsalesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbsalesDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1246,7 +1160,6 @@
 
         #endregion
 
-        private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
@@ -1254,20 +1167,20 @@
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculadoraToolStripMenuItem;
-        private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
-        private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
+        private MaterialSkin.Controls.MaterialTabSelector tabConsultas;
+        private MaterialSkin.Controls.MaterialTabControl tabAdm;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBoxDescricao;
         private System.Windows.Forms.RichTextBox richTextBoxDescricao;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton2;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private MaterialSkin.Controls.MaterialFlatButton btnLimpar;
+        private MaterialSkin.Controls.MaterialFlatButton btnSalvar;
+        private System.Windows.Forms.GroupBox groupBoxStatus;
         private MaterialSkin.Controls.MaterialCheckBox chkPronto;
         private MaterialSkin.Controls.MaterialRadioButton rdbRetirada;
         private MaterialSkin.Controls.MaterialRadioButton rdbManutencao;
         private MaterialSkin.Controls.MaterialRadioButton rdbFila;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtModelo;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtMarca;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtOrcamento;
@@ -1277,19 +1190,19 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtProduto;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtSerie;
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtNome;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtCliente;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtTelefone;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private MaterialSkin.Controls.MaterialDivider materialDivider6;
         private System.Windows.Forms.PictureBox picAdm;
-        private System.Windows.Forms.Panel panelAdm;
+        private System.Windows.Forms.Panel painelAdm;
         private MaterialSkin.Controls.MaterialLabel lblSair;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton6;
+        private MaterialSkin.Controls.MaterialFlatButton btnAtualizar;
         private MaterialSkin.Controls.MaterialDivider materialDivider2;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton4;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton3;
+        private MaterialSkin.Controls.MaterialFlatButton btnDeletar;
+        private MaterialSkin.Controls.MaterialFlatButton btnInserir;
         private MaterialSkin.Controls.MaterialLabel lblObrigatorio;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtEndereco;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MaterialSkin.Controls.MaterialContextMenuStrip ContextMenuForm;
@@ -1310,26 +1223,22 @@
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton5;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField9;
-        private System.Windows.Forms.ColumnHeader id;
-        private System.Windows.Forms.ColumnHeader cliente;
-        private System.Windows.Forms.ColumnHeader tel;
-        private System.Windows.Forms.ColumnHeader produto;
-        private System.Windows.Forms.ColumnHeader marca;
-        private System.Windows.Forms.ColumnHeader endereço;
-        private MaterialSkin.Controls.MaterialListView listviewAdmConsultas;
-        public System.Windows.Forms.ColumnHeader orcamento;
-        private System.Windows.Forms.ColumnHeader status;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel10;
+        private System.Windows.Forms.DataGridView dataGridViewRecentes;
+        private MaterialSkin.Controls.MaterialDivider materialDivider3;
         private dbsalesDataSet dbsalesDataSet;
         private System.Windows.Forms.BindingSource dbsalesBindingSource;
         private dbsalesDataSetTableAdapters.dbsalesTableAdapter dbsalesTableAdapter;
-        private MaterialSkin.Controls.MaterialLabel materialLabel10;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn enderecoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn produtoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn marcaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn serieDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descricao;
+        public System.Windows.Forms.StatusStrip statusStrip;
 
     }
 }

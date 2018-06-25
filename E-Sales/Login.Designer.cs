@@ -34,16 +34,16 @@
             this.chkLembrar = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             this.lblSenha = new MaterialSkin.Controls.MaterialLabel();
-            this.imgAdmin = new System.Windows.Forms.PictureBox();
-            this.imgGuest = new System.Windows.Forms.PictureBox();
             this.lblAdmin = new MaterialSkin.Controls.MaterialLabel();
             this.lblGuest = new MaterialSkin.Controls.MaterialLabel();
             this.btnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.lblSelecionado = new MaterialSkin.Controls.MaterialLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.imgAdmin)).BeginInit();
+            this.imgGuest = new System.Windows.Forms.PictureBox();
+            this.imgAdmin = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgGuest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgAdmin)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSenha
@@ -51,6 +51,7 @@
             this.txtSenha.Depth = 0;
             this.txtSenha.Hint = "Senha";
             this.txtSenha.Location = new System.Drawing.Point(66, 324);
+            this.txtSenha.MaxLength = 32767;
             this.txtSenha.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
@@ -110,33 +111,6 @@
             this.lblSenha.MouseLeave += new System.EventHandler(this.lblSenha_MouseLeave);
             this.lblSenha.MouseHover += new System.EventHandler(this.lblSenha_MouseHover);
             // 
-            // imgAdmin
-            // 
-            this.imgAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgAdmin.ErrorImage = ((System.Drawing.Image)(resources.GetObject("imgAdmin.ErrorImage")));
-            this.imgAdmin.Image = ((System.Drawing.Image)(resources.GetObject("imgAdmin.Image")));
-            this.imgAdmin.Location = new System.Drawing.Point(28, 87);
-            this.imgAdmin.Name = "imgAdmin";
-            this.imgAdmin.Size = new System.Drawing.Size(126, 120);
-            this.imgAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgAdmin.TabIndex = 7;
-            this.imgAdmin.TabStop = false;
-            this.imgAdmin.Click += new System.EventHandler(this.imgAdmin_Click);
-            // 
-            // imgGuest
-            // 
-            this.imgGuest.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgGuest.ErrorImage = ((System.Drawing.Image)(resources.GetObject("imgGuest.ErrorImage")));
-            this.imgGuest.Image = ((System.Drawing.Image)(resources.GetObject("imgGuest.Image")));
-            this.imgGuest.InitialImage = ((System.Drawing.Image)(resources.GetObject("imgGuest.InitialImage")));
-            this.imgGuest.Location = new System.Drawing.Point(249, 87);
-            this.imgGuest.Name = "imgGuest";
-            this.imgGuest.Size = new System.Drawing.Size(126, 120);
-            this.imgGuest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgGuest.TabIndex = 8;
-            this.imgGuest.TabStop = false;
-            this.imgGuest.Click += new System.EventHandler(this.imgGuest_Click);
-            // 
             // lblAdmin
             // 
             this.lblAdmin.AutoSize = true;
@@ -145,7 +119,7 @@
             this.lblAdmin.Depth = 0;
             this.lblAdmin.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblAdmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblAdmin.Location = new System.Drawing.Point(78, 216);
+            this.lblAdmin.Location = new System.Drawing.Point(82, 210);
             this.lblAdmin.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblAdmin.Name = "lblAdmin";
             this.lblAdmin.Size = new System.Drawing.Size(104, 19);
@@ -160,7 +134,7 @@
             this.lblGuest.Depth = 0;
             this.lblGuest.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblGuest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblGuest.Location = new System.Drawing.Point(230, 216);
+            this.lblGuest.Location = new System.Drawing.Point(233, 210);
             this.lblGuest.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblGuest.Name = "lblGuest";
             this.lblGuest.Size = new System.Drawing.Size(80, 19);
@@ -169,13 +143,16 @@
             // 
             // btnLogin
             // 
+            this.btnLogin.AutoSize = true;
+            this.btnLogin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnLogin.Depth = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Icon = null;
             this.btnLogin.Location = new System.Drawing.Point(258, 363);
             this.btnLogin.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Primary = true;
-            this.btnLogin.Size = new System.Drawing.Size(75, 31);
+            this.btnLogin.Size = new System.Drawing.Size(73, 36);
             this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "Entrar";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -217,6 +194,33 @@
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // imgGuest
+            // 
+            this.imgGuest.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgGuest.ErrorImage = ((System.Drawing.Image)(resources.GetObject("imgGuest.ErrorImage")));
+            this.imgGuest.Image = ((System.Drawing.Image)(resources.GetObject("imgGuest.Image")));
+            this.imgGuest.InitialImage = ((System.Drawing.Image)(resources.GetObject("imgGuest.InitialImage")));
+            this.imgGuest.Location = new System.Drawing.Point(210, 87);
+            this.imgGuest.Name = "imgGuest";
+            this.imgGuest.Size = new System.Drawing.Size(126, 120);
+            this.imgGuest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgGuest.TabIndex = 8;
+            this.imgGuest.TabStop = false;
+            this.imgGuest.Click += new System.EventHandler(this.imgGuest_Click);
+            // 
+            // imgAdmin
+            // 
+            this.imgAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgAdmin.ErrorImage = ((System.Drawing.Image)(resources.GetObject("imgAdmin.ErrorImage")));
+            this.imgAdmin.Image = ((System.Drawing.Image)(resources.GetObject("imgAdmin.Image")));
+            this.imgAdmin.Location = new System.Drawing.Point(69, 87);
+            this.imgAdmin.Name = "imgAdmin";
+            this.imgAdmin.Size = new System.Drawing.Size(126, 120);
+            this.imgAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgAdmin.TabIndex = 7;
+            this.imgAdmin.TabStop = false;
+            this.imgAdmin.Click += new System.EventHandler(this.imgAdmin_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,8 +245,8 @@
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)(this.imgAdmin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgGuest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgAdmin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -31,5 +31,15 @@ namespace E_Sales.Properties {
                 return ((int)(this["asd"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=|DataDirectory|\\dbsales.sdf;Password=admin")]
+        public string dbsalesConnectionString {
+            get {
+                return ((string)(this["dbsalesConnectionString"]));
+            }
+        }
     }
 }
