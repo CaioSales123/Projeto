@@ -17,6 +17,7 @@ namespace E_Sales
         {
             InitializeComponent();
             // Criando um material theme manager e adicionando o formulário.
+
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
@@ -32,11 +33,10 @@ namespace E_Sales
         //Define fontes:
         private void Painel_Admin_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dbsalesDataSet.dbsales' table. You can move, or remove it, as needed.
+            this.dbsalesTableAdapter.Fill(this.dbsalesDataSet.dbsales);
             groupBox1.Font = new Font("Roboto", 12, FontStyle.Regular);
-            //lblObrigatorio.ForeColor = Color.Maroon;
-
             
-
         }
 
         private void lblSair_MouseHover(object sender, EventArgs e)
@@ -57,6 +57,21 @@ namespace E_Sales
         private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
         {
             (new Sobre()).Show();
+        }
+
+        private void listviewAdmConsultas_Resize(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listviewAdmRecentes_Resize(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void listviewAdmRecentes_ColumnWidthChanging(object sender, ColumnWidthChangingEventArgs e)
+        {
+            
         }
 
 

@@ -24,3 +24,4 @@ D:\Projetos\Projeto\E-Sales\obj\Debug\E_Sales.Properties.Resources.resources
 D:\Projetos\Projeto\E-Sales\obj\Debug\E_Sales.Sobre.resources
 D:\Projetos\Projeto\E-Sales\obj\Debug\E_Sales.frmSplashScreen.resources
 D:\Projetos\Projeto\E-Sales\obj\Debug\UI.csproj.GenerateResource.Cache
+C:\Users\caiof\documents\visual studio 2012\Projects\E-Sales\E-Sales\bin\Debug\dbsales.sdf
