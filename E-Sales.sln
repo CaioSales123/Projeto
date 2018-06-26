@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "E-Sales\UI.csproj", "{67981C0B-776E-4D91-8554-765442F132EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{3A9DF20B-36C5-4365-B3B4-F7D4BED3E151}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{BA3D95A1-C60C-4252-B983-B1DFC7A3D424}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,14 +13,6 @@ Global
 		{67981C0B-776E-4D91-8554-765442F132EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67981C0B-776E-4D91-8554-765442F132EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67981C0B-776E-4D91-8554-765442F132EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A9DF20B-36C5-4365-B3B4-F7D4BED3E151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A9DF20B-36C5-4365-B3B4-F7D4BED3E151}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A9DF20B-36C5-4365-B3B4-F7D4BED3E151}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A9DF20B-36C5-4365-B3B4-F7D4BED3E151}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BA3D95A1-C60C-4252-B983-B1DFC7A3D424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA3D95A1-C60C-4252-B983-B1DFC7A3D424}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA3D95A1-C60C-4252-B983-B1DFC7A3D424}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA3D95A1-C60C-4252-B983-B1DFC7A3D424}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
