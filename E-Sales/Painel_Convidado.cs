@@ -28,5 +28,12 @@ namespace E_Sales
                 TextShade.WHITE
             );
         }
+
+        private void Painel_Convidado_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dbsalesDataSet.dbsales' table. You can move, or remove it, as needed.
+            this.dbsalesTableAdapter.Fill(this.dbsalesDataSet.dbsales);
+
+        }
     }
 }
