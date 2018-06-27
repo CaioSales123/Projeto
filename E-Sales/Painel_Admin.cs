@@ -36,8 +36,7 @@ namespace E_Sales
         {
             // TODO: This line of code loads data into the 'dbsalesDataSet.dbsales' table. You can move, or remove it, as needed.
             this.dbsalesTableAdapter.Fill(this.dbsalesDataSet.dbsales);
-            
-
+           
             //Define fonte:
             groupBoxStatus.Font = new Font("Roboto", 12, FontStyle.Regular);
             

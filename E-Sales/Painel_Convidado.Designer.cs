@@ -29,22 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.painelAdm = new System.Windows.Forms.Panel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.lblSair = new MaterialSkin.Controls.MaterialLabel();
-            this.picAdm = new System.Windows.Forms.PictureBox();
             this.materialDivider6 = new MaterialSkin.Controls.MaterialDivider();
             this.tabAdm = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnPesquisar = new MaterialSkin.Controls.MaterialFlatButton();
-            this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
-            this.txtID = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.btnCancelar = new MaterialSkin.Controls.MaterialFlatButton();
-            this.dbsalesDataSet = new E_Sales.dbsalesDataSet();
-            this.dbsalesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dbsalesTableAdapter = new E_Sales.dbsalesDataSetTableAdapters.dbsalesTableAdapter();
             this.dataGridViewConsultas = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,13 +49,21 @@
             this.telDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dbsalesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dbsalesDataSet = new E_Sales.dbsalesDataSet();
+            this.btnCancelar = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnPesquisar = new MaterialSkin.Controls.MaterialFlatButton();
+            this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtID = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.dbsalesTableAdapter = new E_Sales.dbsalesDataSetTableAdapters.dbsalesTableAdapter();
+            this.picConv = new System.Windows.Forms.PictureBox();
             this.painelAdm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAdm)).BeginInit();
             this.tabAdm.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dbsalesDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbsalesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConsultas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbsalesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbsalesDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picConv)).BeginInit();
             this.SuspendLayout();
             // 
             // painelAdm
@@ -73,7 +73,7 @@
             this.painelAdm.BackColor = System.Drawing.Color.Transparent;
             this.painelAdm.Controls.Add(this.materialLabel8);
             this.painelAdm.Controls.Add(this.lblSair);
-            this.painelAdm.Controls.Add(this.picAdm);
+            this.painelAdm.Controls.Add(this.picConv);
             this.painelAdm.Controls.Add(this.materialDivider6);
             this.painelAdm.Location = new System.Drawing.Point(799, 25);
             this.painelAdm.Name = "painelAdm";
@@ -110,14 +110,6 @@
             this.lblSair.Size = new System.Drawing.Size(35, 19);
             this.lblSair.TabIndex = 38;
             this.lblSair.Text = "Sair";
-            // 
-            // picAdm
-            // 
-            this.picAdm.Location = new System.Drawing.Point(0, 0);
-            this.picAdm.Name = "picAdm";
-            this.picAdm.Size = new System.Drawing.Size(100, 50);
-            this.picAdm.TabIndex = 40;
-            this.picAdm.TabStop = false;
             // 
             // materialDivider6
             // 
@@ -160,82 +152,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consultas";
             // 
-            // btnPesquisar
-            // 
-            this.btnPesquisar.AutoSize = true;
-            this.btnPesquisar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPesquisar.Depth = 0;
-            this.btnPesquisar.Icon = null;
-            this.btnPesquisar.Location = new System.Drawing.Point(264, 11);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnPesquisar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Primary = false;
-            this.btnPesquisar.Size = new System.Drawing.Size(94, 36);
-            this.btnPesquisar.TabIndex = 60;
-            this.btnPesquisar.Text = "Pesquisar";
-            this.btnPesquisar.UseVisualStyleBackColor = true;
-            // 
-            // materialLabel9
-            // 
-            this.materialLabel9.AutoSize = true;
-            this.materialLabel9.Depth = 0;
-            this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel9.Location = new System.Drawing.Point(7, 28);
-            this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel9.Name = "materialLabel9";
-            this.materialLabel9.Size = new System.Drawing.Size(98, 19);
-            this.materialLabel9.TabIndex = 59;
-            this.materialLabel9.Text = "Busca por ID:";
-            // 
-            // txtID
-            // 
-            this.txtID.Depth = 0;
-            this.txtID.Hint = "Insira o ID";
-            this.txtID.Location = new System.Drawing.Point(111, 24);
-            this.txtID.MaxLength = 32767;
-            this.txtID.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtID.Name = "txtID";
-            this.txtID.PasswordChar = '\0';
-            this.txtID.SelectedText = "";
-            this.txtID.SelectionLength = 0;
-            this.txtID.SelectionStart = 0;
-            this.txtID.Size = new System.Drawing.Size(146, 23);
-            this.txtID.TabIndex = 58;
-            this.txtID.TabStop = false;
-            this.txtID.UseSystemPasswordChar = false;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.AutoSize = true;
-            this.btnCancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnCancelar.Depth = 0;
-            this.btnCancelar.Icon = null;
-            this.btnCancelar.Location = new System.Drawing.Point(366, 11);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnCancelar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Primary = false;
-            this.btnCancelar.Size = new System.Drawing.Size(91, 36);
-            this.btnCancelar.TabIndex = 61;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // dbsalesDataSet
-            // 
-            this.dbsalesDataSet.DataSetName = "dbsalesDataSet";
-            this.dbsalesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dbsalesBindingSource
-            // 
-            this.dbsalesBindingSource.DataMember = "dbsales";
-            this.dbsalesBindingSource.DataSource = this.dbsalesDataSet;
-            // 
-            // dbsalesTableAdapter
-            // 
-            this.dbsalesTableAdapter.ClearBeforeFill = true;
-            // 
             // dataGridViewConsultas
             // 
             this.dataGridViewConsultas.AllowUserToAddRows = false;
@@ -251,14 +167,14 @@
             this.dataGridViewConsultas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.dataGridViewConsultas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewConsultas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewConsultas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewConsultas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewConsultas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewConsultas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn8,
@@ -276,14 +192,14 @@
             this.dataGridViewConsultas.Location = new System.Drawing.Point(11, 53);
             this.dataGridViewConsultas.Name = "dataGridViewConsultas";
             this.dataGridViewConsultas.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewConsultas.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewConsultas.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewConsultas.Size = new System.Drawing.Size(1106, 425);
             this.dataGridViewConsultas.TabIndex = 62;
             // 
@@ -364,6 +280,92 @@
             this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
             this.statusDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // dbsalesBindingSource
+            // 
+            this.dbsalesBindingSource.DataMember = "dbsales";
+            this.dbsalesBindingSource.DataSource = this.dbsalesDataSet;
+            // 
+            // dbsalesDataSet
+            // 
+            this.dbsalesDataSet.DataSetName = "dbsalesDataSet";
+            this.dbsalesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.AutoSize = true;
+            this.btnCancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnCancelar.Depth = 0;
+            this.btnCancelar.Icon = null;
+            this.btnCancelar.Location = new System.Drawing.Point(366, 11);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnCancelar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Primary = false;
+            this.btnCancelar.Size = new System.Drawing.Size(91, 36);
+            this.btnCancelar.TabIndex = 61;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.AutoSize = true;
+            this.btnPesquisar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPesquisar.Depth = 0;
+            this.btnPesquisar.Icon = null;
+            this.btnPesquisar.Location = new System.Drawing.Point(264, 11);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnPesquisar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Primary = false;
+            this.btnPesquisar.Size = new System.Drawing.Size(94, 36);
+            this.btnPesquisar.TabIndex = 60;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel9
+            // 
+            this.materialLabel9.AutoSize = true;
+            this.materialLabel9.Depth = 0;
+            this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel9.Location = new System.Drawing.Point(7, 28);
+            this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel9.Name = "materialLabel9";
+            this.materialLabel9.Size = new System.Drawing.Size(98, 19);
+            this.materialLabel9.TabIndex = 59;
+            this.materialLabel9.Text = "Busca por ID:";
+            // 
+            // txtID
+            // 
+            this.txtID.Depth = 0;
+            this.txtID.Hint = "Insira o ID";
+            this.txtID.Location = new System.Drawing.Point(111, 24);
+            this.txtID.MaxLength = 32767;
+            this.txtID.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtID.Name = "txtID";
+            this.txtID.PasswordChar = '\0';
+            this.txtID.SelectedText = "";
+            this.txtID.SelectionLength = 0;
+            this.txtID.SelectionStart = 0;
+            this.txtID.Size = new System.Drawing.Size(146, 23);
+            this.txtID.TabIndex = 58;
+            this.txtID.TabStop = false;
+            this.txtID.UseSystemPasswordChar = false;
+            // 
+            // dbsalesTableAdapter
+            // 
+            this.dbsalesTableAdapter.ClearBeforeFill = true;
+            // 
+            // picConv
+            // 
+            this.picConv.Image = global::E_Sales.Properties.Resources.Guest;
+            this.picConv.Location = new System.Drawing.Point(28, 0);
+            this.picConv.Name = "picConv";
+            this.picConv.Size = new System.Drawing.Size(49, 38);
+            this.picConv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picConv.TabIndex = 40;
+            this.picConv.TabStop = false;
+            // 
             // Painel_Convidado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -373,17 +375,17 @@
             this.Controls.Add(this.painelAdm);
             this.MinimumSize = new System.Drawing.Size(1130, 600);
             this.Name = "Painel_Convidado";
-            this.Text = "Painel_Convidado";
+            this.Text = "Painel Convidado";
             this.Load += new System.EventHandler(this.Painel_Convidado_Load);
             this.painelAdm.ResumeLayout(false);
             this.painelAdm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAdm)).EndInit();
             this.tabAdm.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dbsalesDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbsalesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConsultas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbsalesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbsalesDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picConv)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -393,7 +395,7 @@
         private System.Windows.Forms.Panel painelAdm;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MaterialSkin.Controls.MaterialLabel lblSair;
-        private System.Windows.Forms.PictureBox picAdm;
+        private System.Windows.Forms.PictureBox picConv;
         private MaterialSkin.Controls.MaterialDivider materialDivider6;
         private MaterialSkin.Controls.MaterialTabControl tabAdm;
         private System.Windows.Forms.TabPage tabPage2;

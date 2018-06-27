@@ -16,7 +16,7 @@ namespace E_Sales
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Painel_Admin());
+            Application.Run(new Login());
         }
     }
 }

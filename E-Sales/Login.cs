@@ -32,18 +32,7 @@ namespace E_Sales
         }
 
         //Variável para verificar se algum usuário foi selecionado e assim expandir o form:
-        bool selecionado;
-        
-        //Efeitos Hover e Leave:
-        private void lblSenha_MouseHover(object sender, EventArgs e)
-        {
-            lblSenha.ForeColor = System.Drawing.Color.DeepSkyBlue;
-        }
-
-        private void lblSenha_MouseLeave(object sender, EventArgs e)
-        {
-            lblSenha.ForeColor = System.Drawing.Color.White;
-        }
+        bool selecionado;       
 
         //Marca o usuário selecionado de azul:
         private void imgAdmin_Click(object sender, EventArgs e)
@@ -52,6 +41,10 @@ namespace E_Sales
             lblSelecionado.Text = "Administrador";
             lblAdmin.ForeColor = System.Drawing.Color.DeepSkyBlue;
             lblGuest.ForeColor = System.Drawing.Color.White;
+
+            //Exibe:
+            txtSenha.Show();
+            chkLembrar.Show();
         }
 
         private void imgGuest_Click(object sender, EventArgs e)
@@ -61,6 +54,7 @@ namespace E_Sales
             lblGuest.ForeColor = System.Drawing.Color.DeepSkyBlue;
             lblAdmin.ForeColor = System.Drawing.Color.White;
 
+            //Esconde:
             txtSenha.Hide();
             chkLembrar.Hide();
         }
@@ -74,7 +68,7 @@ namespace E_Sales
                 try
                 {
                     ActiveForm.Height += 5;
-                    if (ActiveForm.Height >= 477)
+                    if (ActiveForm.Height >= 432)
                     {
                         //Parar Timer e Abrir Form de Login:
                         timer1.Stop();

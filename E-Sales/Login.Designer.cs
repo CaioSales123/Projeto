@@ -33,7 +33,6 @@
             this.txtSenha = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.chkLembrar = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
-            this.lblSenha = new MaterialSkin.Controls.MaterialLabel();
             this.lblAdmin = new MaterialSkin.Controls.MaterialLabel();
             this.lblGuest = new MaterialSkin.Controls.MaterialLabel();
             this.btnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -50,7 +49,7 @@
             // 
             this.txtSenha.Depth = 0;
             this.txtSenha.Hint = "Senha";
-            this.txtSenha.Location = new System.Drawing.Point(66, 324);
+            this.txtSenha.Location = new System.Drawing.Point(69, 290);
             this.txtSenha.MaxLength = 32767;
             this.txtSenha.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtSenha.Name = "txtSenha";
@@ -70,7 +69,7 @@
             this.chkLembrar.Depth = 0;
             this.chkLembrar.Font = new System.Drawing.Font("Roboto", 10F);
             this.chkLembrar.ForeColor = System.Drawing.Color.Transparent;
-            this.chkLembrar.Location = new System.Drawing.Point(66, 364);
+            this.chkLembrar.Location = new System.Drawing.Point(66, 320);
             this.chkLembrar.Margin = new System.Windows.Forms.Padding(0);
             this.chkLembrar.MouseLocation = new System.Drawing.Point(-1, -1);
             this.chkLembrar.MouseState = MaterialSkin.MouseState.HOVER;
@@ -86,30 +85,13 @@
             // 
             this.materialDivider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider1.Depth = 0;
-            this.materialDivider1.Location = new System.Drawing.Point(66, 400);
+            this.materialDivider1.Location = new System.Drawing.Point(66, 356);
             this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1.Name = "materialDivider1";
             this.materialDivider1.Size = new System.Drawing.Size(267, 2);
             this.materialDivider1.TabIndex = 4;
             this.materialDivider1.TabStop = false;
             this.materialDivider1.Text = "materialDivider1";
-            // 
-            // lblSenha
-            // 
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.BackColor = System.Drawing.Color.Transparent;
-            this.lblSenha.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblSenha.Depth = 0;
-            this.lblSenha.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblSenha.Location = new System.Drawing.Point(62, 430);
-            this.lblSenha.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(139, 19);
-            this.lblSenha.TabIndex = 5;
-            this.lblSenha.Text = "Esqueceu a Senha?";
-            this.lblSenha.MouseLeave += new System.EventHandler(this.lblSenha_MouseLeave);
-            this.lblSenha.MouseHover += new System.EventHandler(this.lblSenha_MouseHover);
             // 
             // lblAdmin
             // 
@@ -148,7 +130,7 @@
             this.btnLogin.Depth = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Icon = null;
-            this.btnLogin.Location = new System.Drawing.Point(258, 363);
+            this.btnLogin.Location = new System.Drawing.Point(258, 319);
             this.btnLogin.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Primary = true;
@@ -166,7 +148,7 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(62, 291);
+            this.materialLabel1.Location = new System.Drawing.Point(82, 404);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(156, 19);
@@ -181,7 +163,7 @@
             this.lblSelecionado.Depth = 0;
             this.lblSelecionado.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblSelecionado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblSelecionado.Location = new System.Drawing.Point(213, 291);
+            this.lblSelecionado.Location = new System.Drawing.Point(233, 404);
             this.lblSelecionado.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblSelecionado.Name = "lblSelecionado";
             this.lblSelecionado.Size = new System.Drawing.Size(80, 19);
@@ -233,13 +215,12 @@
             this.Controls.Add(this.lblAdmin);
             this.Controls.Add(this.imgGuest);
             this.Controls.Add(this.imgAdmin);
-            this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.materialDivider1);
             this.Controls.Add(this.chkLembrar);
             this.Controls.Add(this.txtSenha);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(400, 477);
+            this.MaximumSize = new System.Drawing.Size(400, 432);
             this.MinimumSize = new System.Drawing.Size(400, 244);
             this.Name = "Login";
             this.Sizable = false;
@@ -257,7 +238,6 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtSenha;
         private MaterialSkin.Controls.MaterialCheckBox chkLembrar;
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
-        private MaterialSkin.Controls.MaterialLabel lblSenha;
         private System.Windows.Forms.PictureBox imgAdmin;
         private System.Windows.Forms.PictureBox imgGuest;
         private MaterialSkin.Controls.MaterialLabel lblAdmin;
