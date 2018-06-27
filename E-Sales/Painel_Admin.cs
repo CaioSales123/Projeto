@@ -68,12 +68,10 @@ namespace E_Sales
         //Limpa Campos:
         public void btnLimpar_Click(object sender, EventArgs e)
         {
-            txtTelefone.Text = "";
-            txtOrcamento.Text = "";
-            txtProduto.Text = "";
-            txtMarca.Text = "";
-            txtSerie.Text = "";
-            txtEndereco.Text = "";
+            ClienteBLL bll = new ClienteBLL();
+            bll.LimparCampos(//Parametros
+                             txtCliente, txtEndereco, txtMarca, txtOrcamento,
+                             txtProduto, txtSearchId, txtSerie, txtTelefone);
         }
 
         private void btnInserir_Click(object sender, EventArgs e)
