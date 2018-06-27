@@ -84,5 +84,10 @@ namespace E_Sales
         {
 
         }
+
+        private void Painel_Admin_KeyDown(object sender, KeyEventArgs e)
+        {
+            lblStatus.Text = "Processando...";
+        }
     }
 }

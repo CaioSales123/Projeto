@@ -1,4 +1,5 @@
-﻿using MaterialSkin;
+﻿using E_Sales.Code.ClienteBLL;
+using MaterialSkin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,6 +35,16 @@ namespace E_Sales
             // TODO: This line of code loads data into the 'dbsalesDataSet.dbsales' table. You can move, or remove it, as needed.
             this.dbsalesTableAdapter.Fill(this.dbsalesDataSet.dbsales);
 
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtSearchId_KeyDown(object sender, KeyEventArgs e)
+        {
+            lblStatus.Text = "Processando...";
         }
     }
 }

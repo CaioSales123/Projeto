@@ -32,31 +32,34 @@ namespace E_Sales
         }
 
         //Variável para verificar se algum usuário foi selecionado e assim expandir o form:
-        bool selecionado;       
+        bool selecionado;
+        string UsuarioSelecionado = "";
 
         //Marca o usuário selecionado de azul:
         private void imgAdmin_Click(object sender, EventArgs e)
         {          
-            selecionado = true;      
-            lblSelecionado.Text = "Administrador";
+            selecionado = true;
+            UsuarioSelecionado = "Administrador";
+            lblSelecionado.Text = "Usuário Selecionado: " + "Administrador";
             lblAdmin.ForeColor = System.Drawing.Color.DeepSkyBlue;
             lblGuest.ForeColor = System.Drawing.Color.White;
 
             //Exibe:
-            txtSenha.Show();
-            chkLembrar.Show();
+            txtSenha.Enabled = true;
+            chkLembrar.Enabled = true;
         }
 
         private void imgGuest_Click(object sender, EventArgs e)
         {
-            selecionado = true;      
-            lblSelecionado.Text = "Convidado";
+            selecionado = true;
+            UsuarioSelecionado = "Convidado";
+            lblSelecionado.Text = "Usuário Selecionado: " + "Convidado";
             lblGuest.ForeColor = System.Drawing.Color.DeepSkyBlue;
             lblAdmin.ForeColor = System.Drawing.Color.White;
 
             //Esconde:
-            txtSenha.Hide();
-            chkLembrar.Hide();
+            txtSenha.Enabled = false;
+            chkLembrar.Enabled = false;
         }
 
         //Timer para expandir form:
@@ -85,17 +88,22 @@ namespace E_Sales
         private void btnLogin_Click(object sender, EventArgs e)
         {
             //Se lblSelecionado for igual a "Administrador", exibirá o frm de Administrador:
-            if (lblSelecionado.Text == "Administrador")
+            if (UsuarioSelecionado == "Administrador")
             {
                 this.Hide();
                 (new Painel_Admin()).Show();
             }
-            else if (lblSelecionado.Text == "Convidado")
+            else if (UsuarioSelecionado == "Convidado")
             {
                 this.Hide();
                 (new Painel_Convidado()).Show();
             }
             
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,11 @@ namespace E_Sales.Code.ClienteBLL
     {
         //Método de Limpar Campos:
         public void LimparCampos(//Parametros
-                                 Label txtCliente, Label txtEndereco, 
-                                 Label txtMarca, Label txtOrcamento,
-                                 Label txtProduto, Label txtSearchId, 
-                                 Label txtSerie, Label txtTelefone)
+                                 MaterialSingleLineTextField txtCliente, MaterialSingleLineTextField txtEndereco,
+                                 MaterialSingleLineTextField txtMarca, MaterialSingleLineTextField txtOrcamento,
+                                 MaterialSingleLineTextField txtProduto, MaterialSingleLineTextField txtSearchId,
+                                 MaterialSingleLineTextField txtSerie, MaterialSingleLineTextField txtTelefone)
+                                 
         {
             txtCliente.Text = "";
             txtEndereco.Text = "";
@@ -34,8 +36,9 @@ namespace E_Sales.Code.ClienteBLL
                                    MaterialSkin.Controls.MaterialSingleLineTextField txtOrcamento, 
                                    MaterialSkin.Controls.MaterialSingleLineTextField txtProduto, 
                                    MaterialSkin.Controls.MaterialSingleLineTextField txtSearchId, 
-                                   MaterialSkin.Controls.MaterialSingleLineTextField txtSerie, 
-                                   MaterialSkin.Controls.MaterialSingleLineTextField txtTelefone)
+                                   MaterialSkin.Controls.MaterialSingleLineTextField txtSerie,
+                                   MaterialSkin.Controls.MaterialSingleLineTextField txtTelefone,
+                                   MaterialSkin.Controls.MaterialSingleLineTextField txtID)
         {
             throw new NotImplementedException();
         }
