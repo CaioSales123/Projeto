@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace E_Sales.Code.ClienteDAL
 {
     class ClienteDAL
     {
+        
+
     }
 }

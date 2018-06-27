@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using E_Sales.Code.ClienteBLL;
 
 namespace E_Sales
 {
@@ -68,7 +69,6 @@ namespace E_Sales
         //Limpa Campos:
         public void btnLimpar_Click(object sender, EventArgs e)
         {
-            txtCliente.Text = "";
             txtTelefone.Text = "";
             txtOrcamento.Text = "";
             txtProduto.Text = "";
@@ -77,6 +77,15 @@ namespace E_Sales
             txtEndereco.Text = "";
         }
 
+        private void btnInserir_Click(object sender, EventArgs e)
+        {
 
+
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

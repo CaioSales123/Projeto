@@ -91,14 +91,6 @@
             // 
             // picAdm
             // 
-            this.picAdm.Image = global::E_Sales.Properties.Resources.Guest;
-            this.picAdm.Location = new System.Drawing.Point(34, 0);
-            this.picAdm.Name = "picAdm";
-            this.picAdm.Size = new System.Drawing.Size(43, 38);
-            this.picAdm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAdm.TabIndex = 36;
-            this.picAdm.TabStop = false;
-            // 
             // materialDivider6
             // 
             this.materialDivider6.BackColor = System.Drawing.Color.White;

@@ -188,7 +188,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="favicon.ico" />
-    <None Include="Img\Guest.png" />
+    <Content Include="Resources\Admin.png" />
+    <Content Include="Resources\BG3.jpg" />
+    <None Include="Resources\Guest.png" />
     <None Include="Resources\favicon.ico" />
     <None Include="Resources\Mono-Logo.png" />
     <None Include="Resources\Logo1.png" />

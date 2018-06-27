@@ -32,6 +32,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Painel_Admin));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabConsultas = new MaterialSkin.Controls.MaterialTabSelector();
@@ -45,6 +47,17 @@
             this.testeToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.materialDivider3 = new MaterialSkin.Controls.MaterialDivider();
             this.dataGridViewRecentes = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produtoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.marcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.serieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dbsalesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dbsalesDataSet = new E_Sales.dbsalesDataSet();
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.lblObrigatorio = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
@@ -85,53 +98,50 @@
             this.txtProduto = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtCliente = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.materialFlatButton5 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnPesquisar = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialSingleLineTextField9 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtSearchId = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialDivider6 = new MaterialSkin.Controls.MaterialDivider();
             this.painelAdm = new System.Windows.Forms.Panel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.lblSair = new MaterialSkin.Controls.MaterialLabel();
-            this.dbsalesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dbsalesDataSet = new E_Sales.dbsalesDataSet();
             this.dbsalesTableAdapter = new E_Sales.dbsalesDataSetTableAdapters.dbsalesTableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.enderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.produtoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.marcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.serieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.picAdm = new System.Windows.Forms.PictureBox();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.picAdm = new System.Windows.Forms.PictureBox();
+            this.dataGridViewConsultas = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusStrip.SuspendLayout();
             this.tabAdm.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.ContextMenuForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRecentes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbsalesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbsalesDataSet)).BeginInit();
             this.groupBoxDescricao.SuspendLayout();
             this.ContextMenuRichText.SuspendLayout();
             this.groupBoxStatus.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.painelAdm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dbsalesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbsalesDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAdm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConsultas)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip
             // 
             this.statusStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.toolStripDropDownButton1});
             this.statusStrip.Location = new System.Drawing.Point(0, 578);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(1130, 22);
@@ -310,6 +320,70 @@
             this.dataGridViewRecentes.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewRecentes.Size = new System.Drawing.Size(504, 217);
             this.dataGridViewRecentes.TabIndex = 43;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            // 
+            // enderecoDataGridViewTextBoxColumn
+            // 
+            this.enderecoDataGridViewTextBoxColumn.DataPropertyName = "endereco";
+            this.enderecoDataGridViewTextBoxColumn.HeaderText = "endereco";
+            this.enderecoDataGridViewTextBoxColumn.Name = "enderecoDataGridViewTextBoxColumn";
+            // 
+            // produtoDataGridViewTextBoxColumn
+            // 
+            this.produtoDataGridViewTextBoxColumn.DataPropertyName = "produto";
+            this.produtoDataGridViewTextBoxColumn.HeaderText = "produto";
+            this.produtoDataGridViewTextBoxColumn.Name = "produtoDataGridViewTextBoxColumn";
+            // 
+            // marcaDataGridViewTextBoxColumn
+            // 
+            this.marcaDataGridViewTextBoxColumn.DataPropertyName = "marca";
+            this.marcaDataGridViewTextBoxColumn.HeaderText = "marca";
+            this.marcaDataGridViewTextBoxColumn.Name = "marcaDataGridViewTextBoxColumn";
+            // 
+            // serieDataGridViewTextBoxColumn
+            // 
+            this.serieDataGridViewTextBoxColumn.DataPropertyName = "serie";
+            this.serieDataGridViewTextBoxColumn.HeaderText = "serie";
+            this.serieDataGridViewTextBoxColumn.Name = "serieDataGridViewTextBoxColumn";
+            // 
+            // telDataGridViewTextBoxColumn
+            // 
+            this.telDataGridViewTextBoxColumn.DataPropertyName = "tel";
+            this.telDataGridViewTextBoxColumn.HeaderText = "tel";
+            this.telDataGridViewTextBoxColumn.Name = "telDataGridViewTextBoxColumn";
+            // 
+            // status
+            // 
+            this.status.DataPropertyName = "status";
+            this.status.HeaderText = "status";
+            this.status.Name = "status";
+            // 
+            // descricao
+            // 
+            this.descricao.DataPropertyName = "descricao";
+            this.descricao.HeaderText = "descricao";
+            this.descricao.Name = "descricao";
+            // 
+            // dbsalesBindingSource
+            // 
+            this.dbsalesBindingSource.DataMember = "dbsales";
+            this.dbsalesBindingSource.DataSource = this.dbsalesDataSet;
+            // 
+            // dbsalesDataSet
+            // 
+            this.dbsalesDataSet.DataSetName = "dbsalesDataSet";
+            this.dbsalesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // materialLabel10
             // 
@@ -519,6 +593,7 @@
             this.btnInserir.TabIndex = 14;
             this.btnInserir.Text = "Inserir Novo";
             this.btnInserir.UseVisualStyleBackColor = true;
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // btnLimpar
             // 
@@ -882,9 +957,10 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage2.Controls.Add(this.materialFlatButton5);
+            this.tabPage2.Controls.Add(this.dataGridViewConsultas);
+            this.tabPage2.Controls.Add(this.btnPesquisar);
             this.tabPage2.Controls.Add(this.materialLabel9);
-            this.tabPage2.Controls.Add(this.materialSingleLineTextField9);
+            this.tabPage2.Controls.Add(this.txtSearchId);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -892,21 +968,22 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consultas";
             // 
-            // materialFlatButton5
+            // btnPesquisar
             // 
-            this.materialFlatButton5.AutoSize = true;
-            this.materialFlatButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton5.Depth = 0;
-            this.materialFlatButton5.Icon = null;
-            this.materialFlatButton5.Location = new System.Drawing.Point(273, 6);
-            this.materialFlatButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton5.Name = "materialFlatButton5";
-            this.materialFlatButton5.Primary = false;
-            this.materialFlatButton5.Size = new System.Drawing.Size(94, 36);
-            this.materialFlatButton5.TabIndex = 60;
-            this.materialFlatButton5.Text = "Pesquisar";
-            this.materialFlatButton5.UseVisualStyleBackColor = true;
+            this.btnPesquisar.AutoSize = true;
+            this.btnPesquisar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPesquisar.Depth = 0;
+            this.btnPesquisar.Icon = null;
+            this.btnPesquisar.Location = new System.Drawing.Point(273, 6);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnPesquisar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Primary = false;
+            this.btnPesquisar.Size = new System.Drawing.Size(94, 36);
+            this.btnPesquisar.TabIndex = 60;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // materialLabel9
             // 
@@ -914,29 +991,29 @@
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel9.Location = new System.Drawing.Point(16, 19);
+            this.materialLabel9.Location = new System.Drawing.Point(6, 19);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(98, 19);
             this.materialLabel9.TabIndex = 59;
             this.materialLabel9.Text = "Busca por ID:";
             // 
-            // materialSingleLineTextField9
+            // txtSearchId
             // 
-            this.materialSingleLineTextField9.Depth = 0;
-            this.materialSingleLineTextField9.Hint = "Insira o ID";
-            this.materialSingleLineTextField9.Location = new System.Drawing.Point(120, 19);
-            this.materialSingleLineTextField9.MaxLength = 32767;
-            this.materialSingleLineTextField9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField9.Name = "materialSingleLineTextField9";
-            this.materialSingleLineTextField9.PasswordChar = '\0';
-            this.materialSingleLineTextField9.SelectedText = "";
-            this.materialSingleLineTextField9.SelectionLength = 0;
-            this.materialSingleLineTextField9.SelectionStart = 0;
-            this.materialSingleLineTextField9.Size = new System.Drawing.Size(146, 23);
-            this.materialSingleLineTextField9.TabIndex = 58;
-            this.materialSingleLineTextField9.TabStop = false;
-            this.materialSingleLineTextField9.UseSystemPasswordChar = false;
+            this.txtSearchId.Depth = 0;
+            this.txtSearchId.Hint = "Insira o ID";
+            this.txtSearchId.Location = new System.Drawing.Point(110, 19);
+            this.txtSearchId.MaxLength = 32767;
+            this.txtSearchId.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtSearchId.Name = "txtSearchId";
+            this.txtSearchId.PasswordChar = '\0';
+            this.txtSearchId.SelectedText = "";
+            this.txtSearchId.SelectionLength = 0;
+            this.txtSearchId.SelectionStart = 0;
+            this.txtSearchId.Size = new System.Drawing.Size(156, 23);
+            this.txtSearchId.TabIndex = 58;
+            this.txtSearchId.TabStop = false;
+            this.txtSearchId.UseSystemPasswordChar = false;
             // 
             // materialDivider6
             // 
@@ -997,73 +1074,19 @@
             this.lblSair.MouseLeave += new System.EventHandler(this.lblSair_MouseLeave);
             this.lblSair.MouseHover += new System.EventHandler(this.lblSair_MouseHover);
             // 
-            // dbsalesBindingSource
-            // 
-            this.dbsalesBindingSource.DataMember = "dbsales";
-            this.dbsalesBindingSource.DataSource = this.dbsalesDataSet;
-            // 
-            // dbsalesDataSet
-            // 
-            this.dbsalesDataSet.DataSetName = "dbsalesDataSet";
-            this.dbsalesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // dbsalesTableAdapter
             // 
             this.dbsalesTableAdapter.ClearBeforeFill = true;
             // 
-            // idDataGridViewTextBoxColumn
+            // picAdm
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            // 
-            // enderecoDataGridViewTextBoxColumn
-            // 
-            this.enderecoDataGridViewTextBoxColumn.DataPropertyName = "endereco";
-            this.enderecoDataGridViewTextBoxColumn.HeaderText = "endereco";
-            this.enderecoDataGridViewTextBoxColumn.Name = "enderecoDataGridViewTextBoxColumn";
-            // 
-            // produtoDataGridViewTextBoxColumn
-            // 
-            this.produtoDataGridViewTextBoxColumn.DataPropertyName = "produto";
-            this.produtoDataGridViewTextBoxColumn.HeaderText = "produto";
-            this.produtoDataGridViewTextBoxColumn.Name = "produtoDataGridViewTextBoxColumn";
-            // 
-            // marcaDataGridViewTextBoxColumn
-            // 
-            this.marcaDataGridViewTextBoxColumn.DataPropertyName = "marca";
-            this.marcaDataGridViewTextBoxColumn.HeaderText = "marca";
-            this.marcaDataGridViewTextBoxColumn.Name = "marcaDataGridViewTextBoxColumn";
-            // 
-            // serieDataGridViewTextBoxColumn
-            // 
-            this.serieDataGridViewTextBoxColumn.DataPropertyName = "serie";
-            this.serieDataGridViewTextBoxColumn.HeaderText = "serie";
-            this.serieDataGridViewTextBoxColumn.Name = "serieDataGridViewTextBoxColumn";
-            // 
-            // telDataGridViewTextBoxColumn
-            // 
-            this.telDataGridViewTextBoxColumn.DataPropertyName = "tel";
-            this.telDataGridViewTextBoxColumn.HeaderText = "tel";
-            this.telDataGridViewTextBoxColumn.Name = "telDataGridViewTextBoxColumn";
-            // 
-            // status
-            // 
-            this.status.DataPropertyName = "status";
-            this.status.HeaderText = "status";
-            this.status.Name = "status";
-            // 
-            // descricao
-            // 
-            this.descricao.DataPropertyName = "descricao";
-            this.descricao.HeaderText = "descricao";
-            this.descricao.Name = "descricao";
+            this.picAdm.Image = ((System.Drawing.Image)(resources.GetObject("picAdm.Image")));
+            this.picAdm.Location = new System.Drawing.Point(10, 0);
+            this.picAdm.Name = "picAdm";
+            this.picAdm.Size = new System.Drawing.Size(43, 38);
+            this.picAdm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdm.TabIndex = 36;
+            this.picAdm.TabStop = false;
             // 
             // toolStripDropDownButton1
             // 
@@ -1111,15 +1134,117 @@
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
-            // picAdm
+            // dataGridViewConsultas
             // 
-            this.picAdm.Image = ((System.Drawing.Image)(resources.GetObject("picAdm.Image")));
-            this.picAdm.Location = new System.Drawing.Point(10, 0);
-            this.picAdm.Name = "picAdm";
-            this.picAdm.Size = new System.Drawing.Size(43, 38);
-            this.picAdm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAdm.TabIndex = 36;
-            this.picAdm.TabStop = false;
+            this.dataGridViewConsultas.AllowUserToAddRows = false;
+            this.dataGridViewConsultas.AllowUserToDeleteRows = false;
+            this.dataGridViewConsultas.AllowUserToResizeColumns = false;
+            this.dataGridViewConsultas.AllowUserToResizeRows = false;
+            this.dataGridViewConsultas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewConsultas.AutoGenerateColumns = false;
+            this.dataGridViewConsultas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewConsultas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders;
+            this.dataGridViewConsultas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.dataGridViewConsultas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewConsultas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewConsultas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridViewConsultas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewConsultas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.dataGridViewConsultas.DataSource = this.dbsalesBindingSource;
+            this.dataGridViewConsultas.Location = new System.Drawing.Point(10, 51);
+            this.dataGridViewConsultas.Name = "dataGridViewConsultas";
+            this.dataGridViewConsultas.ReadOnly = true;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewConsultas.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewConsultas.Size = new System.Drawing.Size(1104, 427);
+            this.dataGridViewConsultas.TabIndex = 61;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "nome";
+            this.dataGridViewTextBoxColumn2.HeaderText = "nome";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "endereco";
+            this.dataGridViewTextBoxColumn3.HeaderText = "endereco";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "produto";
+            this.dataGridViewTextBoxColumn4.HeaderText = "produto";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "marca";
+            this.dataGridViewTextBoxColumn5.HeaderText = "marca";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "serie";
+            this.dataGridViewTextBoxColumn6.HeaderText = "serie";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "tel";
+            this.dataGridViewTextBoxColumn7.HeaderText = "tel";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "status";
+            this.dataGridViewTextBoxColumn8.HeaderText = "status";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "descricao";
+            this.dataGridViewTextBoxColumn9.HeaderText = "descricao";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
             // 
             // Painel_Admin
             // 
@@ -1142,6 +1267,8 @@
             this.tabPage1.PerformLayout();
             this.ContextMenuForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRecentes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbsalesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbsalesDataSet)).EndInit();
             this.groupBoxDescricao.ResumeLayout(false);
             this.ContextMenuRichText.ResumeLayout(false);
             this.groupBoxStatus.ResumeLayout(false);
@@ -1150,9 +1277,8 @@
             this.tabPage2.PerformLayout();
             this.painelAdm.ResumeLayout(false);
             this.painelAdm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dbsalesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbsalesDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAdm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConsultas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1190,7 +1316,6 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtProduto;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtSerie;
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtCliente;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtTelefone;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private MaterialSkin.Controls.MaterialDivider materialDivider6;
@@ -1220,9 +1345,9 @@
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton5;
+        private MaterialSkin.Controls.MaterialFlatButton btnPesquisar;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField9;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtSearchId;
         private MaterialSkin.Controls.MaterialLabel materialLabel10;
         private System.Windows.Forms.DataGridView dataGridViewRecentes;
         private MaterialSkin.Controls.MaterialDivider materialDivider3;
@@ -1239,6 +1364,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn status;
         private System.Windows.Forms.DataGridViewTextBoxColumn descricao;
         public System.Windows.Forms.StatusStrip statusStrip;
+        public MaterialSkin.Controls.MaterialSingleLineTextField txtCliente;
+        private System.Windows.Forms.DataGridView dataGridViewConsultas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
 
     }
 }
