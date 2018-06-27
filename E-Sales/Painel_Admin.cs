@@ -66,7 +66,7 @@ namespace E_Sales
         }
 
         //Limpa Campos:
-        private void btnLimpar_Click(object sender, EventArgs e)
+        public void btnLimpar_Click(object sender, EventArgs e)
         {
             txtCliente.Text = "";
             txtTelefone.Text = "";

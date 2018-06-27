@@ -1,5 +1,0 @@
-D:\Projetos\Projeto\BLL\bin\Debug\BLL.dll
-D:\Projetos\Projeto\BLL\bin\Debug\BLL.pdb
-D:\Projetos\Projeto\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-D:\Projetos\Projeto\BLL\obj\Debug\BLL.dll
-D:\Projetos\Projeto\BLL\obj\Debug\BLL.pdb

@@ -71,6 +71,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\ClienteBLL\ClienteBLL.cs" />
+    <Compile Include="Code\ClienteDAL\ClienteDAL.cs" />
+    <Compile Include="Code\ClienteDTO\ClienteDTO.cs" />
     <Compile Include="dbsalesDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
