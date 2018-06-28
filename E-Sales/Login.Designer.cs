@@ -212,7 +212,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 432);
+            this.ClientSize = new System.Drawing.Size(400, 244);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.lblSelecionado);
             this.Controls.Add(this.btnLogin);

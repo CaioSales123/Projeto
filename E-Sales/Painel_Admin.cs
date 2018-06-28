@@ -85,9 +85,29 @@ namespace E_Sales
 
         }
 
+        //Status Trip:
         private void Painel_Admin_KeyDown(object sender, KeyEventArgs e)
         {
             lblStatus.Text = "Processando...";
         }
+
+        //Painel de Logado:
+        private void painelAdm_MouseEnter(object sender, EventArgs e)
+        {
+            panelLogado.Visible = true;
+        }
+
+        private void panelLogado_MouseLeave(object sender, EventArgs e)
+        {
+            
+            panelLogado.Visible = false;
+        }
+
+        private void lblSobre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
