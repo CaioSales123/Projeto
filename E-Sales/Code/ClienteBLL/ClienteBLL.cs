@@ -12,12 +12,15 @@ namespace E_Sales.Code.ClienteBLL
     class ClienteBLL
     {
         //Método de Limpar Campos:
-        public void LimparCampos(//Parametros
-                                 MaterialSingleLineTextField txtCliente, MaterialSingleLineTextField txtEndereco,
-                                 MaterialSingleLineTextField txtMarca, MaterialSingleLineTextField txtOrcamento,
-                                 MaterialSingleLineTextField txtProduto, MaterialSingleLineTextField txtSearchId,
-                                 MaterialSingleLineTextField txtSerie, MaterialSingleLineTextField txtTelefone)
-                                 
+        internal void LimparCampos(//Parametros
+                                   MaterialSkin.Controls.MaterialSingleLineTextField txtCliente, 
+                                   MaterialSkin.Controls.MaterialSingleLineTextField txtEndereco, 
+                                   MaterialSkin.Controls.MaterialSingleLineTextField txtMarca, 
+                                   MaterialSkin.Controls.MaterialSingleLineTextField txtOrcamento, 
+                                   MaterialSkin.Controls.MaterialSingleLineTextField txtProduto, 
+                                   MaterialSkin.Controls.MaterialSingleLineTextField txtSearchId, 
+                                   MaterialSkin.Controls.MaterialSingleLineTextField txtSerie,
+                                   MaterialSkin.Controls.MaterialSingleLineTextField txtTelefone)
         {
             txtCliente.Text = "";
             txtEndereco.Text = "";
@@ -27,20 +30,6 @@ namespace E_Sales.Code.ClienteBLL
             txtSearchId.Text = "";
             txtSerie.Text = "";
             txtTelefone.Text = "";
-        }
-
-        internal void LimparCampos(//Parametros
-                                   MaterialSkin.Controls.MaterialSingleLineTextField txtCliente, 
-                                   MaterialSkin.Controls.MaterialSingleLineTextField txtEndereco, 
-                                   MaterialSkin.Controls.MaterialSingleLineTextField txtMarca, 
-                                   MaterialSkin.Controls.MaterialSingleLineTextField txtOrcamento, 
-                                   MaterialSkin.Controls.MaterialSingleLineTextField txtProduto, 
-                                   MaterialSkin.Controls.MaterialSingleLineTextField txtSearchId, 
-                                   MaterialSkin.Controls.MaterialSingleLineTextField txtSerie,
-                                   MaterialSkin.Controls.MaterialSingleLineTextField txtTelefone,
-                                   MaterialSkin.Controls.MaterialSingleLineTextField txtID)
-        {
-            throw new NotImplementedException();
         }
     }
 

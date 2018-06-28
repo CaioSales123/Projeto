@@ -91,6 +91,7 @@ namespace E_Sales
             lblStatus.Text = "Processando...";
         }
 
+<<<<<<< HEAD
         //Painel de Logado:
         private void painelAdm_MouseEnter(object sender, EventArgs e)
         {
@@ -109,5 +110,25 @@ namespace E_Sales
         }
 
         
+=======
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            int rowindex = dataGridViewRecentes.CurrentCell.RowIndex;
+            dataGridViewRecentes.Rows.RemoveAt(rowindex);
+        }
+
+        private void dataGridViewRecentes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = this.dataGridViewRecentes.Rows[e.RowIndex];
+
+            txtCliente.Text = row.Cells[1].Value.ToString();
+            txtEndereco.Text = row.Cells[2].Value.ToString();
+            txtProduto.Text = row.Cells[3].Value.ToString();
+            txtMarca.Text = row.Cells[4].Value.ToString();
+            txtSerie.Text = row.Cells[5].Value.ToString();
+            txtTelefone.Text = row.Cells[6].Value.ToString();
+            richTextBoxDescricao.Text = row.Cells[8].Value.ToString();
+        }
+>>>>>>> 2dc43f556e1b69e65170f6359516d953863dd727
     }
 }
