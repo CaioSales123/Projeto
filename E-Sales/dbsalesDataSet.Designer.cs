@@ -293,10 +293,6 @@ namespace E_Sales {
             
             private global::System.Data.DataColumn columntel;
             
-            private global::System.Data.DataColumn columndescricao;
-            
-            private global::System.Data.DataColumn columnstatus;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public dbsalesDataTable() {
@@ -388,22 +384,6 @@ namespace E_Sales {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn descricaoColumn {
-                get {
-                    return this.columndescricao;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn statusColumn {
-                get {
-                    return this.columnstatus;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -439,7 +419,7 @@ namespace E_Sales {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public dbsalesRow AdddbsalesRow(int id, string nome, string endereco, string produto, string marca, string serie, string tel, string descricao, string status) {
+            public dbsalesRow AdddbsalesRow(int id, string nome, string endereco, string produto, string marca, string serie, string tel) {
                 dbsalesRow rowdbsalesRow = ((dbsalesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id,
@@ -448,9 +428,7 @@ namespace E_Sales {
                         produto,
                         marca,
                         serie,
-                        tel,
-                        descricao,
-                        status};
+                        tel};
                 rowdbsalesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowdbsalesRow);
                 return rowdbsalesRow;
@@ -487,8 +465,6 @@ namespace E_Sales {
                 this.columnmarca = base.Columns["marca"];
                 this.columnserie = base.Columns["serie"];
                 this.columntel = base.Columns["tel"];
-                this.columndescricao = base.Columns["descricao"];
-                this.columnstatus = base.Columns["status"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -508,10 +484,6 @@ namespace E_Sales {
                 base.Columns.Add(this.columnserie);
                 this.columntel = new global::System.Data.DataColumn("tel", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntel);
-                this.columndescricao = new global::System.Data.DataColumn("descricao", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndescricao);
-                this.columnstatus = new global::System.Data.DataColumn("status", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnstatus);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
                 this.columnid.AllowDBNull = false;
@@ -755,38 +727,6 @@ namespace E_Sales {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string descricao {
-                get {
-                    try {
-                        return ((string)(this[this.tabledbsales.descricaoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'descricao\' in table \'dbsales\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tabledbsales.descricaoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string status {
-                get {
-                    try {
-                        return ((string)(this[this.tabledbsales.statusColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'status\' in table \'dbsales\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tabledbsales.statusColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsserieNull() {
                 return this.IsNull(this.tabledbsales.serieColumn);
             }
@@ -807,30 +747,6 @@ namespace E_Sales {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SettelNull() {
                 this[this.tabledbsales.telColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsdescricaoNull() {
-                return this.IsNull(this.tabledbsales.descricaoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetdescricaoNull() {
-                this[this.tabledbsales.descricaoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsstatusNull() {
-                return this.IsNull(this.tabledbsales.statusColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetstatusNull() {
-                this[this.tabledbsales.statusColumn] = global::System.Convert.DBNull;
             }
         }
         

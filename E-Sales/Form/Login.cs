@@ -82,7 +82,6 @@ namespace E_Sales
                     return;
                 }
             }
-            
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -97,17 +96,12 @@ namespace E_Sales
             {
                 this.Hide();
                 (new Painel_Convidado()).Show();
-            }
-            
+            }   
         }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-
-
-        
     }
 }

@@ -41,8 +41,10 @@
             this.imgGuest = new System.Windows.Forms.PictureBox();
             this.imgAdmin = new System.Windows.Forms.PictureBox();
             this.btnSair = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.imgGuest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAdmin)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtSenha
@@ -149,8 +151,8 @@
             this.lblSelecionado.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.lblSelecionado.Depth = 0;
             this.lblSelecionado.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblSelecionado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblSelecionado.Location = new System.Drawing.Point(81, 404);
+            this.lblSelecionado.ForeColor = System.Drawing.Color.White;
+            this.lblSelecionado.Location = new System.Drawing.Point(83, 10);
             this.lblSelecionado.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblSelecionado.Name = "lblSelecionado";
             this.lblSelecionado.Size = new System.Drawing.Size(156, 19);
@@ -208,13 +210,24 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblSelecionado);
+            this.panel1.Location = new System.Drawing.Point(-9, 393);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(416, 42);
+            this.panel1.TabIndex = 15;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 244);
+            this.ClientSize = new System.Drawing.Size(400, 432);
             this.Controls.Add(this.btnSair);
-            this.Controls.Add(this.lblSelecionado);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblGuest);
             this.Controls.Add(this.lblAdmin);
@@ -223,6 +236,7 @@
             this.Controls.Add(this.materialDivider1);
             this.Controls.Add(this.chkLembrar);
             this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(400, 432);
@@ -233,6 +247,8 @@
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.imgGuest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAdmin)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,6 +267,7 @@
         private MaterialSkin.Controls.MaterialLabel lblSelecionado;
         private System.Windows.Forms.Timer timer1;
         private MaterialSkin.Controls.MaterialRaisedButton btnSair;
+        private System.Windows.Forms.Panel panel1;
 
 
     }

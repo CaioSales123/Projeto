@@ -30,15 +30,20 @@ namespace E_Sales
                 TextShade.WHITE
             );
         }
+        bool PanelOn;
+        bool PanelOff;
 
         //Ao abrir:
         private void Painel_Admin_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dbsalesDataSet.dbsales' table. You can move, or remove it, as needed.
-            this.dbsalesTableAdapter.Fill(this.dbsalesDataSet.dbsales);
-           
+            // TODO: This line of code loads data into the 'dbsalesDataSet1.dbsales' table. You can move, or remove it, as needed.
+            this.dbsalesTableAdapter1.Fill(this.dbsalesDataSet1.dbsales);
+
             //Define fonte:
             groupBoxStatus.Font = new Font("Roboto", 12, FontStyle.Regular);
+
+            panelLogado.Enabled = false;
+            panelLogado.Visible = false;
             
         }
 
@@ -53,15 +58,53 @@ namespace E_Sales
             lblSair.ForeColor = System.Drawing.Color.White;
         }
 
-        private void painelAdm_MouseEnter(object sender, EventArgs e)
+        //Abre o panel:
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            panelLogado.Visible = true;
+            //Se panelOn = true:
+            if (PanelOn == true)
+            {
+                timer1.Start();
+                try
+                {
+                    panelLogado.Height += 2;
+                    //Quando a altura do Panel chegar a 90:
+                    if (panelLogado.Height >= 90)
+                    {                    
+                        timer1.Stop();
+                    }
+                }
+                catch (Exception)
+                {
+                    return;
+                }
+            }
         }
 
-        private void panelLogado_Leave(object sender, EventArgs e)
+        private void picAdm_Click(object sender, EventArgs e)
+        {      
+            //Se a variável for true:
+            if (PanelOn == true)
+            {
+                panelLogado.Enabled = false;
+                panelLogado.Visible = false;
+                panelLogado.Size = new Size(330, 180);
+                PanelOn = false;       
+            }
+            else 
+            {
+                panelLogado.Enabled = true;
+                panelLogado.Visible = true;
+                lblConf.ForeColor = System.Drawing.Color.White;
+                lblSobre.ForeColor = System.Drawing.Color.White;
+                lblCalc.ForeColor = System.Drawing.Color.White;
+                PanelOn = true;
+            }            
+        }
+       
+        private void Painel_Admin_Click(object sender, EventArgs e)
         {
-            bool PanelOn = true;
-            panelLogado.Visible = false;
+            PanelOn = false;
         }
 
             //Configurações:
@@ -73,6 +116,7 @@ namespace E_Sales
         private void lblConf_Click(object sender, EventArgs e)
         {
             //Ação click
+            (new Configs()).Show();
         }
 
         private void lblConf_MouseLeave(object sender, EventArgs e)
@@ -89,6 +133,7 @@ namespace E_Sales
         private void lblSobre_Click(object sender, EventArgs e)
         {
             //Ação click
+            (new Sobre()).Show();
         }
 
         private void lblSobre_MouseLeave(object sender, EventArgs e)
@@ -105,6 +150,9 @@ namespace E_Sales
         private void lblCalc_Click(object sender, EventArgs e)
         {
             //Ação click
+            System.Diagnostics.Process p = System.Diagnostics.Process.Start("calc.exe");
+            p.WaitForInputIdle();
+            
         }
 
         private void lblCalc_MouseLeave(object sender, EventArgs e)
@@ -123,19 +171,13 @@ namespace E_Sales
         {
             (new Sobre()).Show();
         }
-
-        
-
+       
         //Status Trip:
         private void Painel_Admin_KeyDown(object sender, KeyEventArgs e)
         {
             lblStatus.Text = "Processando...";
         }
-
-
-        //Painel de Logado:
         
-
         //Botões:
         private void btnDeletar_Click(object sender, EventArgs e)
         {
@@ -156,7 +198,6 @@ namespace E_Sales
             //Inserir:
         private void btnInserir_Click(object sender, EventArgs e)
         {
-
 
         }
             
@@ -179,9 +220,5 @@ namespace E_Sales
             txtTelefone.Text = row.Cells[6].Value.ToString();
             richTextBoxDescricao.Text = row.Cells[8].Value.ToString();
         }
-
-        
-
-
     }
 }

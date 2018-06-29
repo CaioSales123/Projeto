@@ -74,7 +74,7 @@
   <xs:element name="dbsalesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbsalesDataSet" msprop:Generator_UserDSName="dbsalesDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="dbsales" msprop:Generator_TableClassName="dbsalesDataTable" msprop:Generator_TableVarName="tabledbsales" msprop:Generator_RowChangedName="dbsalesRowChanged" msprop:Generator_TablePropName="dbsales" msprop:Generator_RowDeletingName="dbsalesRowDeleting" msprop:Generator_RowChangingName="dbsalesRowChanging" msprop:Generator_RowEvHandlerName="dbsalesRowChangeEventHandler" msprop:Generator_RowDeletedName="dbsalesRowDeleted" msprop:Generator_RowClassName="dbsalesRow" msprop:Generator_UserTableName="dbsales" msprop:Generator_RowEvArgName="dbsalesRowChangeEvent">
+        <xs:element name="dbsales" msprop:Generator_TableClassName="dbsalesDataTable" msprop:Generator_TableVarName="tabledbsales" msprop:Generator_TablePropName="dbsales" msprop:Generator_RowDeletingName="dbsalesRowDeleting" msprop:Generator_RowChangingName="dbsalesRowChanging" msprop:Generator_RowEvHandlerName="dbsalesRowChangeEventHandler" msprop:Generator_RowDeletedName="dbsalesRowDeleted" msprop:Generator_UserTableName="dbsales" msprop:Generator_RowChangedName="dbsalesRowChanged" msprop:Generator_RowEvArgName="dbsalesRowChangeEvent" msprop:Generator_RowClassName="dbsalesRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -120,8 +120,6 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao" type="xs:string" minOccurs="0" />
-              <xs:element name="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_UserColumnName="status" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

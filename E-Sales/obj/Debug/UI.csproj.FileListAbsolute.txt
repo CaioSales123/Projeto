@@ -13,3 +13,4 @@ C:\Users\caiof\Documents\Visual Studio 2012\Projects\E-Sales\E-Sales\bin\Debug\E
 C:\Users\caiof\Documents\Visual Studio 2012\Projects\E-Sales\E-Sales\bin\Debug\MaterialSkin.dll
 C:\Users\caiof\Documents\Visual Studio 2012\Projects\E-Sales\E-Sales\obj\Debug\E-Sales.exe
 C:\Users\caiof\Documents\Visual Studio 2012\Projects\E-Sales\E-Sales\obj\Debug\E-Sales.pdb
+C:\Users\caiof\Documents\Visual Studio 2012\Projects\E-Sales\E-Sales\obj\Debug\E_Sales.Configs.resources
