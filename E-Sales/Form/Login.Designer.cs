@@ -151,7 +151,7 @@
             this.lblSelecionado.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.lblSelecionado.Depth = 0;
             this.lblSelecionado.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblSelecionado.ForeColor = System.Drawing.Color.White;
+            this.lblSelecionado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblSelecionado.Location = new System.Drawing.Point(83, 10);
             this.lblSelecionado.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblSelecionado.Name = "lblSelecionado";
@@ -212,12 +212,11 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(34)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lblSelecionado);
-            this.panel1.Location = new System.Drawing.Point(-9, 393);
+            this.panel1.Location = new System.Drawing.Point(-9, 299);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(416, 42);
             this.panel1.TabIndex = 15;
@@ -226,7 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 432);
+            this.ClientSize = new System.Drawing.Size(400, 244);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblGuest);

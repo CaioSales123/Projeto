@@ -58,31 +58,8 @@ namespace E_Sales
             lblSair.ForeColor = System.Drawing.Color.White;
         }
 
-        //Abre o panel:
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            //Se panelOn = true:
-            if (PanelOn == true)
-            {
-                timer1.Start();
-                try
-                {
-                    panelLogado.Height += 2;
-                    //Quando a altura do Panel chegar a 90:
-                    if (panelLogado.Height >= 90)
-                    {                    
-                        timer1.Stop();
-                    }
-                }
-                catch (Exception)
-                {
-                    return;
-                }
-            }
-        }
-
         private void picAdm_Click(object sender, EventArgs e)
-        {      
+        {     
             //Se a variável for true:
             if (PanelOn == true)
             {
@@ -152,7 +129,6 @@ namespace E_Sales
             //Ação click
             System.Diagnostics.Process p = System.Diagnostics.Process.Start("calc.exe");
             p.WaitForInputIdle();
-            
         }
 
         private void lblCalc_MouseLeave(object sender, EventArgs e)

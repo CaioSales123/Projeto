@@ -89,14 +89,33 @@ namespace E_Sales
             //Se lblSelecionado for igual a "Administrador", exibirá o frm de Administrador:
             if (UsuarioSelecionado == "Administrador")
             {
-                this.Hide();
-                (new Painel_Admin()).Show();
+                //Verifica senha:
+                if (txtSenha.Text == "admin")
+                {
+                    //Logou:
+                    this.Hide();
+                    (new Painel_Admin()).Show();
+                }
+                else
+                { 
+                    //Não Logou:
+                    if (txtSenha.Text == "")
+                    {
+                        MessageBox.Show("Preencha o Campo Senha", "E-Sales", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else 
+                    {
+                        MessageBox.Show("Senha Incorreta", "E-Sales", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        //Limpa Campo:
+                        txtSenha.Text = "";
+                    }                   
+                }               
             }
             else if (UsuarioSelecionado == "Convidado")
             {
                 this.Hide();
                 (new Painel_Convidado()).Show();
-            }   
+            }              
         }
 
         private void btnSair_Click(object sender, EventArgs e)

@@ -40,6 +40,7 @@
             this.Name = "Configs";
             this.ShowInTaskbar = false;
             this.Sizable = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configurações";
             this.TopMost = true;
             this.ResumeLayout(false);
