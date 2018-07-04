@@ -14,3 +14,19 @@ C:\Users\caiof\Documents\Visual Studio 2012\Projects\E-Sales\E-Sales\bin\Debug\M
 C:\Users\caiof\Documents\Visual Studio 2012\Projects\E-Sales\E-Sales\obj\Debug\E-Sales.exe
 C:\Users\caiof\Documents\Visual Studio 2012\Projects\E-Sales\E-Sales\obj\Debug\E-Sales.pdb
 C:\Users\caiof\Documents\Visual Studio 2012\Projects\E-Sales\E-Sales\obj\Debug\E_Sales.Configs.resources
+R:\Projetos\Projeto\E-Sales\bin\Debug\E-Sales.exe.config
+R:\Projetos\Projeto\E-Sales\obj\Debug\E-Sales.exe
+R:\Projetos\Projeto\E-Sales\obj\Debug\E-Sales.pdb
+R:\Projetos\Projeto\E-Sales\bin\Debug\dbsales.sdf
+R:\Projetos\Projeto\E-Sales\bin\Debug\E-Sales.exe
+R:\Projetos\Projeto\E-Sales\bin\Debug\E-Sales.pdb
+R:\Projetos\Projeto\E-Sales\bin\Debug\MaterialSkin.dll
+R:\Projetos\Projeto\E-Sales\obj\Debug\UI.csprojResolveAssemblyReference.cache
+R:\Projetos\Projeto\E-Sales\obj\Debug\E_Sales.Configs.resources
+R:\Projetos\Projeto\E-Sales\obj\Debug\E_Sales.Login.resources
+R:\Projetos\Projeto\E-Sales\obj\Debug\E_Sales.Painel_Admin.resources
+R:\Projetos\Projeto\E-Sales\obj\Debug\E_Sales.Painel_Convidado.resources
+R:\Projetos\Projeto\E-Sales\obj\Debug\E_Sales.Properties.Resources.resources
+R:\Projetos\Projeto\E-Sales\obj\Debug\E_Sales.Sobre.resources
+R:\Projetos\Projeto\E-Sales\obj\Debug\E_Sales.frmSplashScreen.resources
+R:\Projetos\Projeto\E-Sales\obj\Debug\UI.csproj.GenerateResource.Cache

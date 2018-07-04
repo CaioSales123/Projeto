@@ -168,7 +168,7 @@ namespace E_Sales
             bll.LimparCampos(//Parametros
                              txtCliente, txtEndereco, txtMarca, txtOrcamento,
                              txtProduto, txtSearchId, txtSerie, txtTelefone);
-            richTextBoxDescricao.Text = "";
+                             richTextBoxDescricao.Text = "";
         }
 
             //Inserir:
@@ -183,9 +183,10 @@ namespace E_Sales
 
         }
 
-        //DataGrid:
+        //DataGrid Mostrar as Celulas no TXT:
         private void dataGridViewRecentes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
             DataGridViewRow row = this.dataGridViewRecentes.Rows[e.RowIndex];
 
             txtCliente.Text = row.Cells[1].Value.ToString();
@@ -194,7 +195,20 @@ namespace E_Sales
             txtMarca.Text = row.Cells[4].Value.ToString();
             txtSerie.Text = row.Cells[5].Value.ToString();
             txtTelefone.Text = row.Cells[6].Value.ToString();
-            richTextBoxDescricao.Text = row.Cells[8].Value.ToString();
+        }
+
+        //MenuStrip Limpar Campos
+        private void testeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ClienteBLL bll = new ClienteBLL();
+
+            bll.LimparCampos(txtCliente, txtEndereco, txtMarca, txtOrcamento,
+                             txtProduto, txtSearchId, txtSerie, txtTelefone);
+        }
+        //Sair
+        private void lblSair_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }
 }
